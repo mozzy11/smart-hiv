@@ -1,12 +1,12 @@
-library nullContactDataElements
+library AllContactDataElements
 
 using FHIR version '4.0.1'
 
 include FHIRHelpers version '4.0.1'
-include FHIRCommon version '1.1.000' called FC
+include FHIRCommon version '4.0.1' called FC
 
 include WHOCommon called WC
-include nullConcepts called Cs
+include AllConcepts version '0.0.1' called Cx
 
 context Encounter
 
