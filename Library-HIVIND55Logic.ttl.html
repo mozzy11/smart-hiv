@@ -1,0 +1,437 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HIV.IND.55 Logic - TTL Representation - WHO SMART Guidelines - HIV v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.1.49"}
+    h3,h4,h5,h6{--heading-prefix:"5.1.49"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Summary</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+      <li>
+        <a href="adapting.html">Adapting Guidelines for Country use</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Requirements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="concepts.html">Concepts</a>
+      </li>
+      <li>
+        <a href="personas.html">Generic Personas</a>
+      </li>
+      <li>
+        <a href="scenarios.html">User Scenarios</a>
+      </li>
+      <li>
+        <a href="business-processes.html">Business Processes</a>
+      </li>
+      <li>
+        <a href="dictionary.html">Data Dictionary</a>
+      </li>
+      <li>
+        <a href="decision-logic.html">Decision-support Logic</a>
+      </li>
+      <li>
+        <a href="indicators.html">Indicator and Performance Metrics</a>
+      </li>
+      <li>
+        <a href="functional-requirements.html">Functional Requirements</a>
+      </li>
+      <li>
+        <a href="non-functional-requirements.html">Non-functional Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Data Models and Exchange
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="system-actors.html">System Actors</a>
+      </li>
+      <li>
+        <a href="sequence-diagrams.html">Sequence Diagrams</a>
+      </li>
+      <li>
+        <a href="transactions.html">Transactions</a>
+      </li>
+      <li>
+        <a href="indicators-measures.html">Indicators and Measures</a>
+      </li>
+      <li>
+        <a href="codings.html">Codings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="security-privacy.html">Security and Privacy Considerations</a>
+      </li>
+      <li>
+        <a href="testing.html">Testing</a>
+      </li>
+      <li>
+        <a href="test-data.html">Test Data</a>
+      </li>
+      <li>
+        <a href="reference-implementations.html">Reference Implementations</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold">WHO SMART Guidelines - HIV</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='indices.html'><b>Indices</b></a></li><li><a href='artifacts.html'><b>Artifact Index</b></a></li><li><b>HIV.IND.55 Logic</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">WHO SMART Guidelines - HIV - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://smart.who.int/hiv/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Library-HIVIND55Logic.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Library-HIVIND55Logic.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Library-HIVIND55Logic.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: HIV.IND.55 Logic - TTL Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2024-07-01
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Library-HIVIND55Logic.ttl" no-download="true">Raw ttl</a> | <a href="Library-HIVIND55Logic.ttl" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="rdf" style="white-space: pre; overflow: hidden">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:Library ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/library.html#Library.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HIVIND55Logic&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/library.html#Library.meta">fhir:meta</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary&gt;     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary&gt;     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library&gt;     ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module&quot;^^xsd:anyURI ;
+<a href="http://hl7.org/fhir/R4/rdf.html#reference">fhir:link</a> &lt;http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module&gt;     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/library.html#Library.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
+fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Library HIVIND55Logic&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;HIVIND55Logic\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcHIVIND55Logic\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcHIVIND55Logic-en-US\&quot;&gt; &lt;/a&gt;&lt;h2&gt;Contents&lt;/h2&gt;&lt;p&gt;&lt;code&gt;text/cql&lt;/code&gt;&lt;/p&gt;&lt;pre&gt;&lt;code class=\&quot;language-sql\&quot;&gt;/*\n * Library: HIV.IND.55 Logic\n * Ref No: DSD.3\n * Short Name: Coverage of DSD ART models among people living with HIV on ART\n *\n * Definition: % of people living with HIV enrolled in DSD ART models among those eligible for DSD ART (for facilities with electronic HIS) or among people living with HIV On ART (facilities with paper-based systems) during the reporting period\n *\n * Numerator: Number of people living with HIV enrolled in DSD ART models during the reporting period\n * Numerator Calculation: COUNT of clients with &amp;quot;HIV status&amp;quot;='HIV-positive' AND &amp;quot;On ART&amp;quot;=True AND &amp;quot;Currently enrolled in DSD ART model&amp;quot;=True\n * Numerator Exclusions: \n *\n * Denominator: Facilities with electronic health information systems: Number of people living with HIV on ART eligible for DSD ART models during the reporting period |  | Facilities with paper-based systems: Number of people living with HIV receiving ART at the end of the reporting period\n * Denominator Calculation: COUNT of clients with &amp;quot;HIV status&amp;quot;='HIV-positive' AND &amp;quot;On ART&amp;quot;=True AND &amp;quot;Date DSD ART eligibility assessed&amp;quot; within the reporting period AND &amp;quot;Eligible for DSD ART&amp;quot;=True\n * Denominator Exclusions: \n *\n * Disaggregations:\n * • Gender (female, male, other*)\n * • Age (0–4, 5–14, 15–24, 25+ years)\n * • Key populations (men who have sex with men, people living in prisons and other closed settings, people who inject drugs, sex workers, trans and gender diverse people)**\n * • Category of DSD model (group models managed by health care workers, group models managed by clients, individual models based at facilities, and individual models not based at facilities). This requires each DSD ART model of care to be assigned to one of these categories to enable disaggregation.\n * • Cities and other administrative regions of epidemiologic importance\n * \n * Disaggregation Elements: Gender | Age | Key population member type | DSD ART model(s)\n *\n * Numerator and Denominator Elements:\n * Currently enrolled in DSD ART model | Date DSD ART eligibility assessed | Eligible for DSD ART | HIV status | On ART\n *\n * Reference: Consolidated guidelines on person-centred HIV strategic information: strengthening routine data for impact. Geneva: World Health Organization; 2022\n * \n * Data Concepts:\n *  \n * HIV.A.DE17: Age | Calculated age (number of years) of the client based on date of birth \n * HIV.A.DE18: Gender* | Gender of the client* \n * HIV.A.DE19: Female | Client identifies as female \n * HIV.A.DE20: Male | Client identifies as male \n * HIV.A.DE21: Transgender male | Client identifies as transgender male \n * HIV.A.DE22: Transgender female | Client identifies as transgender female \n * HIV.A.DE23: Other | Additional category \n * HIV.B.DE50: Key population member type* | The type of key population that the client is included in \n * HIV.B.DE51: Sex worker | Client is a sex worker \n * HIV.B.DE52: Men who have sex with men | Client is a man who has sex with men \n * HIV.B.DE53: Trans and gender-diverse people | Client identifies as trans and gender-diverse \n * HIV.B.DE54: People who inject drugs | Client is a person who injects drugs \n * HIV.B.DE55: People living in prisons and other closed settings | Client lives in a prison or another closed setting \n * HIV.B.DE115: HIV status | HIV status reported after applying the national HIV testing algorithm. No single HIV test can provide an HIV-positive diagnosis. \n * HIV.B.DE116: HIV-positive | Client is HIV-positive \n * HIV.B.DE117: HIV-negative | Client is HIV-negative \n * HIV.B.DE118: Unknown | Client has unknown HIV status \n * HIV.D.DE38: On ART | Client is currently taking ART \n * HIV.D.DE760: Eligible for DSD ART | Client is eligible for differentiated service delivery (DSD) for ART \n * HIV.D.DE761: Date DSD ART eligibility assessed | Date client was assessed for eligibility for differentiated service delivery (DSD) for ART \n * HIV.D.DE762: Currently enrolled in DSD ART model | Client currently enrolled in differentiated service delivery (DSD) ART model \n * HIV.D.DE764: DSD ART model(s) | Type of DSD ART model client is enrolled in (country-specific) \n * HIV.D.DE765: Fast track ART refill | Client is enrolled in fast track ART refill (DSD ART model) \n * HIV.D.DE766: Facility adherence club | Client is enrolled in facility adherence club (DSD ART model) \n * HIV.D.DE767: Community ART distribution point | Client is enrolled in community ART distribution point (DSD ART model) \n * HIV.D.DE768: CHW/peer educator community ART group | Client is enrolled in community health worker/peer educator community ART group (DSD ART model) \n * HIV.D.DE769: Patient/client community ART group | Client is enrolled in patient/client community ART group (DSD ART model) \n * HIV.D.DE770: Other DSD ART model | Client is enrolled in another DSD ART model \n * HIV.E.DE114: Key population member type* | The type of key population that the infant's mother is included in \n * HIV.E.DE115: Sex worker | Infant's mother is a sex worker \n * HIV.E.DE116: People who inject drugs | Infant's mother is a person who injects drugs \n * HIV.E.DE117: Trans and gender-diverse people | Infant's mother identifies as trans and gender-diverse \n * HIV.E.DE118: People living in prisons and other closed setting | Infant's mother is in a prison or closed setting \n * HIV.H.DE47: On ART | Client is currently taking ART \n *\n * Additional Context\n * - what it measures: This indicator measures the rollout and implementation of DSD models of ART during the reporting period.\n * - rationale: • WHO recommends DSD models of care for eligible individuals to ensure that care meets the diversity of needs among people living with HIV. | • This indicator measures whether individuals who are eligible for DSD ART are receiving such services.\n * - method: Patient monitoring tools (electronic or paper), for example ART register/EMR |  | Coverage measures all people living with HIV currently enrolled in DSD ART models, | including those newly enrolled and those enrolled in prior reporting periods. For facilities with paper-based reporting, a proxy for the denominator of number of people eligible for DSD ART can be used. |  | Measurement frequency: quarterly\n * \n * Suggested Scoring Method: proportion | http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm\n */\n\nlibrary HIVIND55Logic\n\n// Included Libraries\nusing FHIR version '4.0.1'\n\ninclude HIVIndicatorCommon version '0.0.1' called HIC\ninclude FHIRHelpers version '4.0.1'\ninclude WHOCommon called WCom\ninclude FHIRCommon called FC\n\n// Indicator Definition\n&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;No Content&lt;/code&gt; (&lt;code&gt;application/elm+xml&lt;/code&gt;)&lt;/p&gt;&lt;/div&gt;&quot;
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/library.html#Library.extension">fhir:extension</a> ( [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;computable&quot; ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/library.html#Library.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://smart.who.int/HIV/Library/HIVIND55Logic&quot;^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R4/library.html#Library.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.1.0&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/library.html#Library.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HIVIND55Logic&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/library.html#Library.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;HIV.IND.55 Logic&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/library.html#Library.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;draft&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/library.html#Library.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> &quot;true&quot;^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R4/library.html#Library.type">fhir:type</a> [
+    ( <a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;http://terminology.hl7.org/CodeSystem/library-type&quot;^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;logic-library&quot; ]     ] )
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/library.html#Library.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2024-07-01T05:12:03+00:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/library.html#Library.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/library.html#Library.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;WHO&quot; ] ;
+    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;url&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;http://who.int&quot; ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/library.html#Library.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> &quot;% of people living with HIV enrolled in DSD ART models among those eligible for DSD ART (for facilities with electronic HIS) or among people living with HIV On ART (facilities with paper-based systems) during the reporting period&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/library.html#Library.content">fhir:content</a> ( [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">fhir:contentType</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;text/cql&quot; ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">fhir:data</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">fhir:v</a> &quot;LyoKICogTGlicmFyeTogSElWLklORC41NSBMb2dpYwogKiBSZWYgTm86IERTRC4zCiAqIFNob3J0IE5hbWU6IENvdmVyYWdlIG9mIERTRCBBUlQgbW9kZWxzIGFtb25nIHBlb3BsZSBsaXZpbmcgd2l0aCBISVYgb24gQVJUCiAqCiAqIERlZmluaXRpb246ICUgb2YgcGVvcGxlIGxpdmluZyB3aXRoIEhJViBlbnJvbGxlZCBpbiBEU0QgQVJUIG1vZGVscyBhbW9uZyB0aG9zZSBlbGlnaWJsZSBmb3IgRFNEIEFSVCAoZm9yIGZhY2lsaXRpZXMgd2l0aCBlbGVjdHJvbmljIEhJUykgb3IgYW1vbmcgcGVvcGxlIGxpdmluZyB3aXRoIEhJViBPbiBBUlQgKGZhY2lsaXRpZXMgd2l0aCBwYXBlci1iYXNlZCBzeXN0ZW1zKSBkdXJpbmcgdGhlIHJlcG9ydGluZyBwZXJpb2QKICoKICogTnVtZXJhdG9yOiBOdW1iZXIgb2YgcGVvcGxlIGxpdmluZyB3aXRoIEhJViBlbnJvbGxlZCBpbiBEU0QgQVJUIG1vZGVscyBkdXJpbmcgdGhlIHJlcG9ydGluZyBwZXJpb2QKICogTnVtZXJhdG9yIENhbGN1bGF0aW9uOiBDT1VOVCBvZiBjbGllbnRzIHdpdGggIkhJViBzdGF0dXMiPSdISVYtcG9zaXRpdmUnIEFORCAiT24gQVJUIj1UcnVlIEFORCAiQ3VycmVudGx5IGVucm9sbGVkIGluIERTRCBBUlQgbW9kZWwiPVRydWUKICogTnVtZXJhdG9yIEV4Y2x1c2lvbnM6IAogKgogKiBEZW5vbWluYXRvcjogRmFjaWxpdGllcyB3aXRoIGVsZWN0cm9uaWMgaGVhbHRoIGluZm9ybWF0aW9uIHN5c3RlbXM6IE51bWJlciBvZiBwZW9wbGUgbGl2aW5nIHdpdGggSElWIG9uIEFSVCBlbGlnaWJsZSBmb3IgRFNEIEFSVCBtb2RlbHMgZHVyaW5nIHRoZSByZXBvcnRpbmcgcGVyaW9kIHwgIHwgRmFjaWxpdGllcyB3aXRoIHBhcGVyLWJhc2VkIHN5c3RlbXM6IE51bWJlciBvZiBwZW9wbGUgbGl2aW5nIHdpdGggSElWIHJlY2VpdmluZyBBUlQgYXQgdGhlIGVuZCBvZiB0aGUgcmVwb3J0aW5nIHBlcmlvZAogKiBEZW5vbWluYXRvciBDYWxjdWxhdGlvbjogQ09VTlQgb2YgY2xpZW50cyB3aXRoICJISVYgc3RhdHVzIj0nSElWLXBvc2l0aXZlJyBBTkQgIk9uIEFSVCI9VHJ1ZSBBTkQgIkRhdGUgRFNEIEFSVCBlbGlnaWJpbGl0eSBhc3Nlc3NlZCIgd2l0aGluIHRoZSByZXBvcnRpbmcgcGVyaW9kIEFORCAiRWxpZ2libGUgZm9yIERTRCBBUlQiPVRydWUKICogRGVub21pbmF0b3IgRXhjbHVzaW9uczogCiAqCiAqIERpc2FnZ3JlZ2F0aW9uczoKICog4oCiwqBHZW5kZXIgKGZlbWFsZSwgbWFsZSwgb3RoZXIqKQogKiDigKIgQWdlICgw4oCTNCwgNeKAkzE0LCAxNeKAkzI0LCAyNSsgeWVhcnMpCiAqIOKAosKgS2V5IHBvcHVsYXRpb25zIChtZW4gd2hvIGhhdmUgc2V4IHdpdGggbWVuLCBwZW9wbGUgbGl2aW5nIGluIHByaXNvbnMgYW5kIG90aGVyIGNsb3NlZCBzZXR0aW5ncywgcGVvcGxlIHdobyBpbmplY3QgZHJ1Z3MsIHNleCB3b3JrZXJzLCB0cmFucyBhbmQgZ2VuZGVyIGRpdmVyc2UgcGVvcGxlKSoqCiAqIOKAosKgQ2F0ZWdvcnkgb2YgRFNEIG1vZGVsIChncm91cCBtb2RlbHMgbWFuYWdlZCBieSBoZWFsdGggY2FyZSB3b3JrZXJzLCBncm91cCBtb2RlbHMgbWFuYWdlZCBieSBjbGllbnRzLCBpbmRpdmlkdWFsIG1vZGVscyBiYXNlZCBhdCBmYWNpbGl0aWVzLCBhbmQgaW5kaXZpZHVhbCBtb2RlbHMgbm90IGJhc2VkIGF0IGZhY2lsaXRpZXMpLiBUaGlzIHJlcXVpcmVzIGVhY2ggRFNEIEFSVCBtb2RlbCBvZiBjYXJlIHRvIGJlIGFzc2lnbmVkIHRvIG9uZSBvZiB0aGVzZSBjYXRlZ29yaWVzIHRvIGVuYWJsZSBkaXNhZ2dyZWdhdGlvbi4KICog4oCiwqBDaXRpZXMgYW5kIG90aGVyIGFkbWluaXN0cmF0aXZlIHJlZ2lvbnMgb2YgZXBpZGVtaW9sb2dpYyBpbXBvcnRhbmNlCiAqIAogKiBEaXNhZ2dyZWdhdGlvbiBFbGVtZW50czogR2VuZGVyIHwgQWdlIHwgS2V5IHBvcHVsYXRpb24gbWVtYmVyIHR5cGUgfCBEU0QgQVJUIG1vZGVsKHMpCiAqCiAqIE51bWVyYXRvciBhbmQgRGVub21pbmF0b3IgRWxlbWVudHM6CiAqIEN1cnJlbnRseSBlbnJvbGxlZCBpbiBEU0QgQVJUIG1vZGVsIHwgRGF0ZSBEU0QgQVJUIGVsaWdpYmlsaXR5IGFzc2Vzc2VkIHwgRWxpZ2libGUgZm9yIERTRCBBUlQgfCBISVYgc3RhdHVzIHwgT24gQVJUCiAqCiAqIFJlZmVyZW5jZTogQ29uc29saWRhdGVkIGd1aWRlbGluZXMgb24gcGVyc29uLWNlbnRyZWQgSElWIHN0cmF0ZWdpYyBpbmZvcm1hdGlvbjogc3RyZW5ndGhlbmluZyByb3V0aW5lIGRhdGEgZm9yIGltcGFjdC4gR2VuZXZhOiBXb3JsZCBIZWFsdGggT3JnYW5pemF0aW9uOyAyMDIyCiAqIAogKiBEYXRhIENvbmNlcHRzOgogKiAgCiAqIEhJVi5BLkRFMTc6IEFnZSB8IENhbGN1bGF0ZWQgYWdlIChudW1iZXIgb2YgeWVhcnMpIG9mIHRoZSBjbGllbnQgYmFzZWQgb24gZGF0ZSBvZiBiaXJ0aCAKICogSElWLkEuREUxODogR2VuZGVyKiB8IEdlbmRlciBvZiB0aGUgY2xpZW50KiAKICogSElWLkEuREUxOTogRmVtYWxlIHwgQ2xpZW50IGlkZW50aWZpZXMgYXMgZmVtYWxlIAogKiBISVYuQS5ERTIwOiBNYWxlIHwgQ2xpZW50IGlkZW50aWZpZXMgYXMgbWFsZSAKICogSElWLkEuREUyMTogVHJhbnNnZW5kZXIgbWFsZSB8IENsaWVudCBpZGVudGlmaWVzIGFzIHRyYW5zZ2VuZGVyIG1hbGUgCiAqIEhJVi5BLkRFMjI6IFRyYW5zZ2VuZGVyIGZlbWFsZSB8IENsaWVudCBpZGVudGlmaWVzIGFzIHRyYW5zZ2VuZGVyIGZlbWFsZSAKICogSElWLkEuREUyMzogT3RoZXIgfCBBZGRpdGlvbmFsIGNhdGVnb3J5IAogKiBISVYuQi5ERTUwOiBLZXkgcG9wdWxhdGlvbiBtZW1iZXIgdHlwZSogfCBUaGUgdHlwZSBvZiBrZXkgcG9wdWxhdGlvbiB0aGF0IHRoZSBjbGllbnQgaXMgaW5jbHVkZWQgaW4gCiAqIEhJVi5CLkRFNTE6IFNleCB3b3JrZXIgfCBDbGllbnQgaXMgYSBzZXggd29ya2VyIAogKiBISVYuQi5ERTUyOiBNZW4gd2hvIGhhdmUgc2V4IHdpdGggbWVuIHwgQ2xpZW50IGlzIGEgbWFuIHdobyBoYXMgc2V4IHdpdGggbWVuIAogKiBISVYuQi5ERTUzOiBUcmFucyBhbmQgZ2VuZGVyLWRpdmVyc2UgcGVvcGxlIHwgQ2xpZW50IGlkZW50aWZpZXMgYXMgdHJhbnMgYW5kIGdlbmRlci1kaXZlcnNlIAogKiBISVYuQi5ERTU0OiBQZW9wbGUgd2hvIGluamVjdCBkcnVncyB8IENsaWVudCBpcyBhIHBlcnNvbiB3aG8gaW5qZWN0cyBkcnVncyAKICogSElWLkIuREU1NTogUGVvcGxlIGxpdmluZyBpbiBwcmlzb25zIGFuZCBvdGhlciBjbG9zZWQgc2V0dGluZ3MgfCBDbGllbnQgbGl2ZXMgaW4gYSBwcmlzb24gb3IgYW5vdGhlciBjbG9zZWQgc2V0dGluZyAKICogSElWLkIuREUxMTU6IEhJViBzdGF0dXMgfCBISVYgc3RhdHVzIHJlcG9ydGVkIGFmdGVyIGFwcGx5aW5nIHRoZSBuYXRpb25hbCBISVYgdGVzdGluZyBhbGdvcml0aG0uIE5vIHNpbmdsZSBISVYgdGVzdCBjYW4gcHJvdmlkZSBhbiBISVYtcG9zaXRpdmUgZGlhZ25vc2lzLiAKICogSElWLkIuREUxMTY6IEhJVi1wb3NpdGl2ZSB8IENsaWVudCBpcyBISVYtcG9zaXRpdmUgCiAqIEhJVi5CLkRFMTE3OiBISVYtbmVnYXRpdmUgfCBDbGllbnQgaXMgSElWLW5lZ2F0aXZlIAogKiBISVYuQi5ERTExODogVW5rbm93biB8IENsaWVudCBoYXMgdW5rbm93biBISVYgc3RhdHVzIAogKiBISVYuRC5ERTM4OiBPbiBBUlQgfCBDbGllbnQgaXMgY3VycmVudGx5IHRha2luZyBBUlQgCiAqIEhJVi5ELkRFNzYwOiBFbGlnaWJsZSBmb3IgRFNEIEFSVCB8IENsaWVudCBpcyBlbGlnaWJsZSBmb3IgZGlmZmVyZW50aWF0ZWQgc2VydmljZSBkZWxpdmVyeSAoRFNEKSBmb3IgQVJUIAogKiBISVYuRC5ERTc2MTogRGF0ZSBEU0QgQVJUIGVsaWdpYmlsaXR5IGFzc2Vzc2VkIHwgRGF0ZSBjbGllbnQgd2FzIGFzc2Vzc2VkIGZvciBlbGlnaWJpbGl0eSBmb3IgZGlmZmVyZW50aWF0ZWQgc2VydmljZSBkZWxpdmVyeSAoRFNEKSBmb3IgQVJUIAogKiBISVYuRC5ERTc2MjogQ3VycmVudGx5IGVucm9sbGVkIGluIERTRCBBUlQgbW9kZWwgfCBDbGllbnQgY3VycmVudGx5IGVucm9sbGVkIGluIGRpZmZlcmVudGlhdGVkIHNlcnZpY2UgZGVsaXZlcnkgKERTRCkgQVJUIG1vZGVsIAogKiBISVYuRC5ERTc2NDogRFNEIEFSVCBtb2RlbChzKSB8IFR5cGUgb2YgRFNEIEFSVCBtb2RlbCBjbGllbnQgaXMgZW5yb2xsZWQgaW4gKGNvdW50cnktc3BlY2lmaWMpIAogKiBISVYuRC5ERTc2NTogRmFzdCB0cmFjayBBUlQgcmVmaWxsIHwgQ2xpZW50IGlzIGVucm9sbGVkIGluIGZhc3QgdHJhY2sgQVJUIHJlZmlsbCAoRFNEIEFSVCBtb2RlbCkgCiAqIEhJVi5ELkRFNzY2OiBGYWNpbGl0eSBhZGhlcmVuY2UgY2x1YiB8IENsaWVudCBpcyBlbnJvbGxlZCBpbiBmYWNpbGl0eSBhZGhlcmVuY2UgY2x1YiAoRFNEIEFSVCBtb2RlbCkgCiAqIEhJVi5ELkRFNzY3OiBDb21tdW5pdHkgQVJUIGRpc3RyaWJ1dGlvbiBwb2ludCB8IENsaWVudCBpcyBlbnJvbGxlZCBpbiBjb21tdW5pdHkgQVJUIGRpc3RyaWJ1dGlvbiBwb2ludCAoRFNEIEFSVCBtb2RlbCkgCiAqIEhJVi5ELkRFNzY4OiBDSFcvcGVlciBlZHVjYXRvciBjb21tdW5pdHkgQVJUIGdyb3VwIHwgQ2xpZW50IGlzIGVucm9sbGVkIGluIGNvbW11bml0eSBoZWFsdGggd29ya2VyL3BlZXIgZWR1Y2F0b3IgY29tbXVuaXR5IEFSVCBncm91cCAoRFNEIEFSVCBtb2RlbCkgCiAqIEhJVi5ELkRFNzY5OiBQYXRpZW50L2NsaWVudCBjb21tdW5pdHkgQVJUIGdyb3VwIHwgQ2xpZW50IGlzIGVucm9sbGVkIGluIHBhdGllbnQvY2xpZW50IGNvbW11bml0eSBBUlQgZ3JvdXAgKERTRCBBUlQgbW9kZWwpIAogKiBISVYuRC5ERTc3MDogT3RoZXIgRFNEIEFSVCBtb2RlbCB8IENsaWVudCBpcyBlbnJvbGxlZCBpbiBhbm90aGVyIERTRCBBUlQgbW9kZWwgCiAqIEhJVi5FLkRFMTE0OiBLZXkgcG9wdWxhdGlvbiBtZW1iZXIgdHlwZSogfCBUaGUgdHlwZSBvZiBrZXkgcG9wdWxhdGlvbiB0aGF0IHRoZSBpbmZhbnQncyBtb3RoZXIgaXMgaW5jbHVkZWQgaW4gCiAqIEhJVi5FLkRFMTE1OiBTZXggd29ya2VyIHwgSW5mYW50J3MgbW90aGVyIGlzIGEgc2V4IHdvcmtlciAKICogSElWLkUuREUxMTY6IFBlb3BsZSB3aG8gaW5qZWN0IGRydWdzIHwgSW5mYW50J3MgbW90aGVyIGlzIGEgcGVyc29uIHdobyBpbmplY3RzIGRydWdzIAogKiBISVYuRS5ERTExNzogVHJhbnMgYW5kIGdlbmRlci1kaXZlcnNlIHBlb3BsZSB8IEluZmFudCdzIG1vdGhlciBpZGVudGlmaWVzIGFzIHRyYW5zIGFuZCBnZW5kZXItZGl2ZXJzZSAKICogSElWLkUuREUxMTg6IFBlb3BsZSBsaXZpbmcgaW4gcHJpc29ucyBhbmQgb3RoZXIgY2xvc2VkIHNldHRpbmcgfCBJbmZhbnQncyBtb3RoZXIgaXMgaW4gYSBwcmlzb24gb3IgY2xvc2VkIHNldHRpbmcgCiAqIEhJVi5ILkRFNDc6IE9uIEFSVCB8IENsaWVudCBpcyBjdXJyZW50bHkgdGFraW5nIEFSVCAKICoKICogQWRkaXRpb25hbCBDb250ZXh0CiAqIC0gd2hhdCBpdCBtZWFzdXJlczogVGhpcyBpbmRpY2F0b3IgbWVhc3VyZXMgdGhlIHJvbGxvdXQgYW5kIGltcGxlbWVudGF0aW9uIG9mIERTRCBtb2RlbHMgb2YgQVJUIGR1cmluZyB0aGUgcmVwb3J0aW5nIHBlcmlvZC4KICogLSByYXRpb25hbGU6IOKAoiBXSE8gcmVjb21tZW5kcyBEU0QgbW9kZWxzIG9mIGNhcmUgZm9yIGVsaWdpYmxlIGluZGl2aWR1YWxzIHRvIGVuc3VyZSB0aGF0IGNhcmUgbWVldHMgdGhlIGRpdmVyc2l0eSBvZiBuZWVkcyBhbW9uZyBwZW9wbGUgbGl2aW5nIHdpdGggSElWLiB8IOKAoiBUaGlzIGluZGljYXRvciBtZWFzdXJlcyB3aGV0aGVyIGluZGl2aWR1YWxzIHdobyBhcmUgZWxpZ2libGUgZm9yIERTRCBBUlQgYXJlIHJlY2VpdmluZyBzdWNoIHNlcnZpY2VzLgogKiAtIG1ldGhvZDogUGF0aWVudCBtb25pdG9yaW5nIHRvb2xzIChlbGVjdHJvbmljIG9yIHBhcGVyKSwgZm9yIGV4YW1wbGUgQVJUIHJlZ2lzdGVyL0VNUiB8ICB8IENvdmVyYWdlIG1lYXN1cmVzIGFsbCBwZW9wbGUgbGl2aW5nIHdpdGggSElWIGN1cnJlbnRseSBlbnJvbGxlZCBpbiBEU0QgQVJUIG1vZGVscywgfCBpbmNsdWRpbmcgdGhvc2UgbmV3bHkgZW5yb2xsZWQgYW5kIHRob3NlIGVucm9sbGVkIGluIHByaW9yIHJlcG9ydGluZyBwZXJpb2RzLiBGb3IgZmFjaWxpdGllcyB3aXRoIHBhcGVyLWJhc2VkIHJlcG9ydGluZywgYSBwcm94eSBmb3IgdGhlIGRlbm9taW5hdG9yIG9mIG51bWJlciBvZiBwZW9wbGUgZWxpZ2libGUgZm9yIERTRCBBUlQgY2FuIGJlIHVzZWQuIHwgIHwgTWVhc3VyZW1lbnQgZnJlcXVlbmN5OiBxdWFydGVybHkKICogCiAqIFN1Z2dlc3RlZCBTY29yaW5nIE1ldGhvZDogcHJvcG9ydGlvbiB8IGh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvY3FmbWVhc3VyZXMvU3RydWN0dXJlRGVmaW5pdGlvbi9wcm9wb3J0aW9uLW1lYXN1cmUtY3FmbQogKi8KCmxpYnJhcnkgSElWSU5ENTVMb2dpYwoKLy8gSW5jbHVkZWQgTGlicmFyaWVzCnVzaW5nIEZISVIgdmVyc2lvbiAnNC4wLjEnCgppbmNsdWRlIEhJVkluZGljYXRvckNvbW1vbiB2ZXJzaW9uICcwLjAuMScgY2FsbGVkIEhJQwppbmNsdWRlIEZISVJIZWxwZXJzIHZlcnNpb24gJzQuMC4xJwppbmNsdWRlIFdIT0NvbW1vbiBjYWxsZWQgV0NvbQppbmNsdWRlIEZISVJDb21tb24gY2FsbGVkIEZDCgovLyBJbmRpY2F0b3IgRGVmaW5pdGlvbgo=&quot;^^xsd:base64Binary ]
+  ] [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">fhir:contentType</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;application/elm+xml&quot; ]
+  ] ) . # 
+
+</pre>
+
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.hiv#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 1, 2024 05:12+0000">2024-07-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/hiv/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

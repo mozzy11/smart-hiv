@@ -1,0 +1,438 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HIV.IND.14 Logic - JSON Representation - WHO SMART Guidelines - HIV v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.1.8"}
+    h3,h4,h5,h6{--heading-prefix:"5.1.8"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Summary</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+      <li>
+        <a href="adapting.html">Adapting Guidelines for Country use</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Requirements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="concepts.html">Concepts</a>
+      </li>
+      <li>
+        <a href="personas.html">Generic Personas</a>
+      </li>
+      <li>
+        <a href="scenarios.html">User Scenarios</a>
+      </li>
+      <li>
+        <a href="business-processes.html">Business Processes</a>
+      </li>
+      <li>
+        <a href="dictionary.html">Data Dictionary</a>
+      </li>
+      <li>
+        <a href="decision-logic.html">Decision-support Logic</a>
+      </li>
+      <li>
+        <a href="indicators.html">Indicator and Performance Metrics</a>
+      </li>
+      <li>
+        <a href="functional-requirements.html">Functional Requirements</a>
+      </li>
+      <li>
+        <a href="non-functional-requirements.html">Non-functional Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Data Models and Exchange
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="system-actors.html">System Actors</a>
+      </li>
+      <li>
+        <a href="sequence-diagrams.html">Sequence Diagrams</a>
+      </li>
+      <li>
+        <a href="transactions.html">Transactions</a>
+      </li>
+      <li>
+        <a href="indicators-measures.html">Indicators and Measures</a>
+      </li>
+      <li>
+        <a href="codings.html">Codings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="security-privacy.html">Security and Privacy Considerations</a>
+      </li>
+      <li>
+        <a href="testing.html">Testing</a>
+      </li>
+      <li>
+        <a href="test-data.html">Test Data</a>
+      </li>
+      <li>
+        <a href="reference-implementations.html">Reference Implementations</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold">WHO SMART Guidelines - HIV</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='indices.html'><b>Indices</b></a></li><li><a href='artifacts.html'><b>Artifact Index</b></a></li><li><b>HIV.IND.14 Logic</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">WHO SMART Guidelines - HIV - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://smart.who.int/hiv/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="Library-HIVIND14Logic.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Library-HIVIND14Logic.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Library-HIVIND14Logic.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: HIV.IND.14 Logic - JSON Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2024-07-01
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="Library-HIVIND14Logic.json" no-download="true">Raw json</a> | <a href="Library-HIVIND14Logic.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
+{
+  "<a href="http://hl7.org/fhir/R4/library.html#Library">resourceType</a>" : "Library",
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.id">id</a>" : "HIVIND14Logic",
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.meta">meta</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+      <a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-shareablelibrary.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareablelibrary"<a href="http://hl7.org/fhir/uv/crmi/STU1/StructureDefinition-crmi-publishablelibrary.html" style="color: Maroon">&#x1F517;</a> ,
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary"<a href="http://hl7.org/fhir/uv/cql/STU1/StructureDefinition-cql-library.html" style="color: Maroon">&#x1F517;</a> ,
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library"<a href="http://hl7.org/fhir/uv/cql/STU1/StructureDefinition-cql-module.html" style="color: Maroon">&#x1F517;</a> ,
+      "http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module"
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Library HIVIND14Logic&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;HIVIND14Logic\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcHIVIND14Logic\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcHIVIND14Logic-en-US\&quot;&gt; &lt;/a&gt;&lt;h2&gt;Contents&lt;/h2&gt;&lt;p&gt;&lt;code&gt;text/cql&lt;/code&gt;&lt;/p&gt;&lt;pre&gt;&lt;code class=\&quot;language-sql\&quot;&gt;/*\n * Library: HIV.IND.14 Logic\n * Ref No: PRV.14\n * Short Name: OAMT minimum dose\n *\n * Definition: % of OAMT recipients receiving a maintenance dose greater than or equal to the recommended minimum dose\n *\n * Numerator: Number of people, at a specified date, maintained on methadone or buprenorphine receiving recommended minimum maintenance dose (WHO guidance recommends doses of ≥60 mg of methadone or ≥8 mg of buprenorphine*)\n * Numerator Calculation: COUNT of clients with (&amp;quot;Medications prescribed&amp;quot;='Methadone' AND &amp;quot;Dose of medications prescribed&amp;quot; GREATER THAN OR EQUAL TO 60mg) OR (&amp;quot;Medications prescribed&amp;quot;='Buprenorphine' AND &amp;quot;Dose of medications prescribed&amp;quot; GREATER THAN OR EQUAL TO 8mg) for a specified &amp;quot;Reporting date&amp;quot;\n * Numerator Exclusions: &amp;quot;Client being inducted on OAMT&amp;quot; OR &amp;quot;Client on reducing doses of OAMT&amp;quot;\n *\n * Denominator: Number of people receiving maintenance dose of methadone or buprenorphine at a specified date, excluding: a) individuals currently being inducted on OAMT and yet to reach the maintenance dose and b) individuals on reducing doses of OAMT.\n * Denominator Calculation: COUNT of clients with &amp;quot;Medications prescribed&amp;quot; IN 'Methadone', 'Buprenorphine' for a specified &amp;quot;Reporting date&amp;quot;\n * Denominator Exclusions: &amp;quot;Client being inducted on OAMT&amp;quot; OR &amp;quot;Client on reducing doses of OAMT&amp;quot;\n *\n * Disaggregations:\n * • Gender (female, male, other**)\n * • Age (15–19, 20–24, 25–49, 50+ years)\n * • Provider type (key population-led or community-led organization, public sector provider, other entities such as private for-profit and not-for-profit organizations, including faith-based, international, nongovernmental)\n * • Setting: facility-based service (including hospitals, health clinics, general practice offices, etc.) or community-based service (including drop-in centres, community service delivery points, mobile clinics or vans, outreach teams, community support groups, etc.)\n * •\u00a0Cities and other administrative regions of epidemiologic importance\n * \n * Disaggregation Elements: Gender | Age\n *\n * Numerator and Denominator Elements:\n * Dose of medications prescribed | Medications prescribed | Reporting date\n *\n * Reference: Consolidated guidelines on person-centred HIV strategic information: strengthening routine data for impact. Geneva: World Health Organization; 2022\n * \n * Data Concepts:\n *  \n * HIV.A.DE17: Age | Calculated age (number of years) of the client based on date of birth \n * HIV.A.DE18: Gender* | Gender of the client* \n * HIV.A.DE19: Female | Client identifies as female \n * HIV.A.DE20: Male | Client identifies as male \n * HIV.A.DE21: Transgender male | Client identifies as transgender male \n * HIV.A.DE22: Transgender female | Client identifies as transgender female \n * HIV.A.DE23: Other | Additional category \n * HIV.C.DE75: Medications prescribed | Medications the client was prescribed \n * HIV.C.DE76: PrEP for HIV prevention | Client was prescribed pre-exposure prophylaxis (PrEP) for HIV prevention \n * HIV.C.DE77: PEP for HIV prevention | Client was prescribed post-exposure prophylaxis (PEP) for HIV prevention \n * HIV.C.DE78: Other | Client was prescribed other medications \n * HIV.D.DE457: Medications prescribed | Name or regimen code of all other medications prescribed during the visit \n * HIV.D.DE459: Dose of medications prescribed | Number of doses (quantity taken at a single point in time) of drugs prescribed/dispensed \n * HIV.Config.DE22: Reporting date | Reporting date, for surveys performed on a specific date\n *\n * Additional Context\n * - what it measures: Measures the proportion of OAMT recipients receiving the recommended minimum maintenance dose.\n * - rationale: Evidence demonstrates that maximum benefit from OAMT is gained when individuals receive at least the recommended minimum maintenance dose.\n * - method: Individual-level data obtained from programme records\n * \n * Suggested Scoring Method: proportion | http://hl7.org/fhir/us/cqfmeasures/StructureDefinition/proportion-measure-cqfm\n */\n\nlibrary HIVIND14Logic\n\n// Included Libraries\nusing FHIR version '4.0.1'\n\ninclude HIVIndicatorCommon version '0.0.1' called HIC\ninclude FHIRHelpers version '4.0.1'\ninclude WHOCommon called WCom\ninclude FHIRCommon called FC\n\n// Indicator Definition\n&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;No Content&lt;/code&gt; (&lt;code&gt;application/elm+xml&lt;/code&gt;)&lt;/p&gt;&lt;/div&gt;"
+  },
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.extension">extension</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a>" : "computable"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.url">url</a>" : "http://smart.who.int/HIV/Library/HIVIND14Logic",
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.name">name</a>" : "HIVIND14Logic",
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.title">title</a>" : "HIV.IND.14 Logic",
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.experimental">experimental</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.type">type</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+      {
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/library-type",
+        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "logic-library"
+      }
+    ]
+  },
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.date">date</a>" : "2024-07-01T05:12:03+00:00",
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.publisher">publisher</a>" : "WHO",
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "WHO",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://who.int"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.description">description</a>" : "% of OAMT recipients receiving a maintenance dose greater than or equal to the recommended minimum dose",
+  "<a href="http://hl7.org/fhir/R4/library.html#Library.content">content</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a>" : "text/cql",
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">data</a>" : "LyoKICogTGlicmFyeTogSElWLklORC4xNCBMb2dpYwogKiBSZWYgTm86IFBSVi4xNAogKiBTaG9ydCBOYW1lOiBPQU1UIG1pbmltdW0gZG9zZQogKgogKiBEZWZpbml0aW9uOiAlIG9mIE9BTVQgcmVjaXBpZW50cyByZWNlaXZpbmcgYSBtYWludGVuYW5jZSBkb3NlIGdyZWF0ZXIgdGhhbiBvciBlcXVhbCB0byB0aGUgcmVjb21tZW5kZWQgbWluaW11bSBkb3NlCiAqCiAqIE51bWVyYXRvcjogTnVtYmVyIG9mIHBlb3BsZSwgYXQgYSBzcGVjaWZpZWQgZGF0ZSwgbWFpbnRhaW5lZCBvbiBtZXRoYWRvbmUgb3IgYnVwcmVub3JwaGluZSByZWNlaXZpbmcgcmVjb21tZW5kZWQgbWluaW11bSBtYWludGVuYW5jZSBkb3NlIChXSE8gZ3VpZGFuY2UgcmVjb21tZW5kcyBkb3NlcyBvZiDiiaU2MCBtZyBvZiBtZXRoYWRvbmUgb3Ig4omlOCBtZyBvZiBidXByZW5vcnBoaW5lKikKICogTnVtZXJhdG9yIENhbGN1bGF0aW9uOiBDT1VOVCBvZiBjbGllbnRzIHdpdGggKCJNZWRpY2F0aW9ucyBwcmVzY3JpYmVkIj0nTWV0aGFkb25lJyBBTkQgIkRvc2Ugb2YgbWVkaWNhdGlvbnMgcHJlc2NyaWJlZCIgR1JFQVRFUiBUSEFOIE9SIEVRVUFMIFRPIDYwbWcpIE9SICgiTWVkaWNhdGlvbnMgcHJlc2NyaWJlZCI9J0J1cHJlbm9ycGhpbmUnIEFORCAiRG9zZSBvZiBtZWRpY2F0aW9ucyBwcmVzY3JpYmVkIiBHUkVBVEVSIFRIQU4gT1IgRVFVQUwgVE8gOG1nKSBmb3IgYSBzcGVjaWZpZWQgIlJlcG9ydGluZyBkYXRlIgogKiBOdW1lcmF0b3IgRXhjbHVzaW9uczogIkNsaWVudCBiZWluZyBpbmR1Y3RlZCBvbiBPQU1UIiBPUiAiQ2xpZW50IG9uIHJlZHVjaW5nIGRvc2VzIG9mIE9BTVQiCiAqCiAqIERlbm9taW5hdG9yOiBOdW1iZXIgb2YgcGVvcGxlIHJlY2VpdmluZyBtYWludGVuYW5jZSBkb3NlIG9mIG1ldGhhZG9uZSBvciBidXByZW5vcnBoaW5lIGF0IGEgc3BlY2lmaWVkIGRhdGUsIGV4Y2x1ZGluZzogYSkgaW5kaXZpZHVhbHMgY3VycmVudGx5IGJlaW5nIGluZHVjdGVkIG9uIE9BTVQgYW5kIHlldCB0byByZWFjaCB0aGUgbWFpbnRlbmFuY2UgZG9zZSBhbmQgYikgaW5kaXZpZHVhbHMgb24gcmVkdWNpbmcgZG9zZXMgb2YgT0FNVC4KICogRGVub21pbmF0b3IgQ2FsY3VsYXRpb246IENPVU5UIG9mIGNsaWVudHMgd2l0aCAiTWVkaWNhdGlvbnMgcHJlc2NyaWJlZCIgSU4gJ01ldGhhZG9uZScsICdCdXByZW5vcnBoaW5lJyBmb3IgYSBzcGVjaWZpZWQgIlJlcG9ydGluZyBkYXRlIgogKiBEZW5vbWluYXRvciBFeGNsdXNpb25zOiAiQ2xpZW50IGJlaW5nIGluZHVjdGVkIG9uIE9BTVQiIE9SICJDbGllbnQgb24gcmVkdWNpbmcgZG9zZXMgb2YgT0FNVCIKICoKICogRGlzYWdncmVnYXRpb25zOgogKiDigKIgR2VuZGVyIChmZW1hbGUsIG1hbGUsIG90aGVyKiopCiAqIOKAoiBBZ2UgKDE14oCTMTksIDIw4oCTMjQsIDI14oCTNDksIDUwKyB5ZWFycykKICog4oCiIFByb3ZpZGVyIHR5cGUgKGtleSBwb3B1bGF0aW9uLWxlZCBvciBjb21tdW5pdHktbGVkIG9yZ2FuaXphdGlvbiwgcHVibGljIHNlY3RvciBwcm92aWRlciwgb3RoZXIgZW50aXRpZXMgc3VjaCBhcyBwcml2YXRlIGZvci1wcm9maXQgYW5kIG5vdC1mb3ItcHJvZml0IG9yZ2FuaXphdGlvbnMsIGluY2x1ZGluZyBmYWl0aC1iYXNlZCwgaW50ZXJuYXRpb25hbCwgbm9uZ292ZXJubWVudGFsKQogKiDigKIgU2V0dGluZzogZmFjaWxpdHktYmFzZWQgc2VydmljZSAoaW5jbHVkaW5nIGhvc3BpdGFscywgaGVhbHRoIGNsaW5pY3MsIGdlbmVyYWwgcHJhY3RpY2Ugb2ZmaWNlcywgZXRjLikgb3IgY29tbXVuaXR5LWJhc2VkIHNlcnZpY2UgKGluY2x1ZGluZyBkcm9wLWluIGNlbnRyZXMsIGNvbW11bml0eSBzZXJ2aWNlIGRlbGl2ZXJ5IHBvaW50cywgbW9iaWxlIGNsaW5pY3Mgb3IgdmFucywgb3V0cmVhY2ggdGVhbXMsIGNvbW11bml0eSBzdXBwb3J0IGdyb3VwcywgZXRjLikKICog4oCiwqBDaXRpZXMgYW5kIG90aGVyIGFkbWluaXN0cmF0aXZlIHJlZ2lvbnMgb2YgZXBpZGVtaW9sb2dpYyBpbXBvcnRhbmNlCiAqIAogKiBEaXNhZ2dyZWdhdGlvbiBFbGVtZW50czogR2VuZGVyIHwgQWdlCiAqCiAqIE51bWVyYXRvciBhbmQgRGVub21pbmF0b3IgRWxlbWVudHM6CiAqIERvc2Ugb2YgbWVkaWNhdGlvbnMgcHJlc2NyaWJlZCB8IE1lZGljYXRpb25zIHByZXNjcmliZWQgfCBSZXBvcnRpbmcgZGF0ZQogKgogKiBSZWZlcmVuY2U6IENvbnNvbGlkYXRlZCBndWlkZWxpbmVzIG9uIHBlcnNvbi1jZW50cmVkIEhJViBzdHJhdGVnaWMgaW5mb3JtYXRpb246IHN0cmVuZ3RoZW5pbmcgcm91dGluZSBkYXRhIGZvciBpbXBhY3QuIEdlbmV2YTogV29ybGQgSGVhbHRoIE9yZ2FuaXphdGlvbjsgMjAyMgogKiAKICogRGF0YSBDb25jZXB0czoKICogIAogKiBISVYuQS5ERTE3OiBBZ2UgfCBDYWxjdWxhdGVkIGFnZSAobnVtYmVyIG9mIHllYXJzKSBvZiB0aGUgY2xpZW50IGJhc2VkIG9uIGRhdGUgb2YgYmlydGggCiAqIEhJVi5BLkRFMTg6IEdlbmRlciogfCBHZW5kZXIgb2YgdGhlIGNsaWVudCogCiAqIEhJVi5BLkRFMTk6IEZlbWFsZSB8IENsaWVudCBpZGVudGlmaWVzIGFzIGZlbWFsZSAKICogSElWLkEuREUyMDogTWFsZSB8IENsaWVudCBpZGVudGlmaWVzIGFzIG1hbGUgCiAqIEhJVi5BLkRFMjE6IFRyYW5zZ2VuZGVyIG1hbGUgfCBDbGllbnQgaWRlbnRpZmllcyBhcyB0cmFuc2dlbmRlciBtYWxlIAogKiBISVYuQS5ERTIyOiBUcmFuc2dlbmRlciBmZW1hbGUgfCBDbGllbnQgaWRlbnRpZmllcyBhcyB0cmFuc2dlbmRlciBmZW1hbGUgCiAqIEhJVi5BLkRFMjM6IE90aGVyIHwgQWRkaXRpb25hbCBjYXRlZ29yeSAKICogSElWLkMuREU3NTogTWVkaWNhdGlvbnMgcHJlc2NyaWJlZCB8IE1lZGljYXRpb25zIHRoZSBjbGllbnQgd2FzIHByZXNjcmliZWQgCiAqIEhJVi5DLkRFNzY6IFByRVAgZm9yIEhJViBwcmV2ZW50aW9uIHwgQ2xpZW50IHdhcyBwcmVzY3JpYmVkIHByZS1leHBvc3VyZSBwcm9waHlsYXhpcyAoUHJFUCkgZm9yIEhJViBwcmV2ZW50aW9uIAogKiBISVYuQy5ERTc3OiBQRVAgZm9yIEhJViBwcmV2ZW50aW9uIHwgQ2xpZW50IHdhcyBwcmVzY3JpYmVkIHBvc3QtZXhwb3N1cmUgcHJvcGh5bGF4aXMgKFBFUCkgZm9yIEhJViBwcmV2ZW50aW9uIAogKiBISVYuQy5ERTc4OiBPdGhlciB8IENsaWVudCB3YXMgcHJlc2NyaWJlZCBvdGhlciBtZWRpY2F0aW9ucyAKICogSElWLkQuREU0NTc6IE1lZGljYXRpb25zIHByZXNjcmliZWQgfCBOYW1lIG9yIHJlZ2ltZW4gY29kZSBvZiBhbGwgb3RoZXIgbWVkaWNhdGlvbnMgcHJlc2NyaWJlZCBkdXJpbmcgdGhlIHZpc2l0IAogKiBISVYuRC5ERTQ1OTogRG9zZSBvZiBtZWRpY2F0aW9ucyBwcmVzY3JpYmVkIHwgTnVtYmVyIG9mIGRvc2VzIChxdWFudGl0eSB0YWtlbiBhdCBhIHNpbmdsZSBwb2ludCBpbiB0aW1lKSBvZiBkcnVncyBwcmVzY3JpYmVkL2Rpc3BlbnNlZCAKICogSElWLkNvbmZpZy5ERTIyOiBSZXBvcnRpbmcgZGF0ZSB8IFJlcG9ydGluZyBkYXRlLCBmb3Igc3VydmV5cyBwZXJmb3JtZWQgb24gYSBzcGVjaWZpYyBkYXRlCiAqCiAqIEFkZGl0aW9uYWwgQ29udGV4dAogKiAtIHdoYXQgaXQgbWVhc3VyZXM6IE1lYXN1cmVzIHRoZSBwcm9wb3J0aW9uIG9mIE9BTVQgcmVjaXBpZW50cyByZWNlaXZpbmcgdGhlIHJlY29tbWVuZGVkIG1pbmltdW0gbWFpbnRlbmFuY2UgZG9zZS4KICogLSByYXRpb25hbGU6IEV2aWRlbmNlIGRlbW9uc3RyYXRlcyB0aGF0IG1heGltdW0gYmVuZWZpdCBmcm9tIE9BTVQgaXMgZ2FpbmVkIHdoZW4gaW5kaXZpZHVhbHMgcmVjZWl2ZSBhdCBsZWFzdCB0aGUgcmVjb21tZW5kZWQgbWluaW11bSBtYWludGVuYW5jZSBkb3NlLgogKiAtIG1ldGhvZDogSW5kaXZpZHVhbC1sZXZlbCBkYXRhIG9idGFpbmVkIGZyb20gcHJvZ3JhbW1lIHJlY29yZHMKICogCiAqIFN1Z2dlc3RlZCBTY29yaW5nIE1ldGhvZDogcHJvcG9ydGlvbiB8IGh0dHA6Ly9obDcub3JnL2ZoaXIvdXMvY3FmbWVhc3VyZXMvU3RydWN0dXJlRGVmaW5pdGlvbi9wcm9wb3J0aW9uLW1lYXN1cmUtY3FmbQogKi8KCmxpYnJhcnkgSElWSU5EMTRMb2dpYwoKLy8gSW5jbHVkZWQgTGlicmFyaWVzCnVzaW5nIEZISVIgdmVyc2lvbiAnNC4wLjEnCgppbmNsdWRlIEhJVkluZGljYXRvckNvbW1vbiB2ZXJzaW9uICcwLjAuMScgY2FsbGVkIEhJQwppbmNsdWRlIEZISVJIZWxwZXJzIHZlcnNpb24gJzQuMC4xJwppbmNsdWRlIFdIT0NvbW1vbiBjYWxsZWQgV0NvbQppbmNsdWRlIEZISVJDb21tb24gY2FsbGVkIEZDCgovLyBJbmRpY2F0b3IgRGVmaW5pdGlvbgo="
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a>" : "application/elm+xml"
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.hiv#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 1, 2024 05:12+0000">2024-07-01</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/hiv/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
