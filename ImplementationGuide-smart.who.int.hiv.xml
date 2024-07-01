@@ -17,7 +17,7 @@
   <title value="WHO SMART Guidelines - HIV"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2024-07-01T13:58:30+00:00"/>
+  <date value="2024-07-01T14:01:13+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -675,7 +675,7 @@
         <reference value="Requirements/HIV.J.Aggregatereportinganddatause"/>
       </reference>
       <name value="Aggregate reporting and data use"/>
-      <description value="Functional Requirements For  for Aggregate reporting and data use"/>
+      <description value="Functional Requirements For Aggregate reporting and data use"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -961,7 +961,7 @@
         <reference value="Requirements/HIV.D.Careandtreatmentclinicalvisit"/>
       </reference>
       <name value="Care and treatment clinical visit"/>
-      <description value="Functional Requirements For  for Care and treatment clinical visit"/>
+      <description value="Functional Requirements For Care and treatment clinical visit"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1511,7 +1511,7 @@
         <reference value="Requirements/HIV.G.Diagnostics"/>
       </reference>
       <name value="Diagnostics"/>
-      <description value="Functional Requirements For  for Diagnostics"/>
+      <description value="Functional Requirements For Diagnostics"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -1753,7 +1753,7 @@
         <reference value="Requirements/HIV.H.Followingupandcontactingclients"/>
       </reference>
       <name value="Following up and contacting clients"/>
-      <description value="Functional Requirements For  for Following up and contacting clients"/>
+      <description value="Functional Requirements For Following up and contacting clients"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -2017,7 +2017,7 @@
         <reference value="Requirements/HIVNonFunctionalRequirements"/>
       </reference>
       <name value="HIV non Functional Requirements"/>
-      <description value="Non Functional Requirements For  for HIV"/>
+      <description value="Non Functional Requirements For HIV"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -2149,7 +2149,7 @@
         <reference value="Requirements/HIV.B.HIVtestingservices"/>
       </reference>
       <name value="HIV testing services"/>
-      <description value="Functional Requirements For  for HIV testing services"/>
+      <description value="Functional Requirements For HIV testing services"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -4272,7 +4272,7 @@
         <reference value="Requirements/HIV.C.PrEPvisit"/>
       </reference>
       <name value="PrEP visit"/>
-      <description value="Functional Requirements For  for PrEP visit"/>
+      <description value="Functional Requirements For PrEP visit"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -4712,7 +4712,7 @@
         <reference value="Requirements/HIV.I.Referral"/>
       </reference>
       <name value="Referral"/>
-      <description value="Functional Requirements For  for Referral"/>
+      <description value="Functional Requirements For Referral"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -4745,7 +4745,7 @@
         <reference value="Requirements/HIV.A.Registration"/>
       </reference>
       <name value="Registration"/>
-      <description value="Functional Requirements For  for Registration"/>
+      <description value="Functional Requirements For Registration"/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>

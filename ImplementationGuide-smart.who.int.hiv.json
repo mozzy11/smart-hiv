@@ -16,7 +16,7 @@
   "title" : "WHO SMART Guidelines - HIV",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2024-07-01T13:58:30+00:00",
+  "date" : "2024-07-01T14:01:13+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -897,7 +897,7 @@
         "reference" : "Requirements/HIV.J.Aggregatereportinganddatause"
       },
       "name" : "Aggregate reporting and data use",
-      "description" : "Functional Requirements For  for Aggregate reporting and data use",
+      "description" : "Functional Requirements For Aggregate reporting and data use",
       "exampleBoolean" : true
     },
     {
@@ -1209,7 +1209,7 @@
         "reference" : "Requirements/HIV.D.Careandtreatmentclinicalvisit"
       },
       "name" : "Care and treatment clinical visit",
-      "description" : "Functional Requirements For  for Care and treatment clinical visit",
+      "description" : "Functional Requirements For Care and treatment clinical visit",
       "exampleBoolean" : true
     },
     {
@@ -1809,7 +1809,7 @@
         "reference" : "Requirements/HIV.G.Diagnostics"
       },
       "name" : "Diagnostics",
-      "description" : "Functional Requirements For  for Diagnostics",
+      "description" : "Functional Requirements For Diagnostics",
       "exampleBoolean" : true
     },
     {
@@ -2073,7 +2073,7 @@
         "reference" : "Requirements/HIV.H.Followingupandcontactingclients"
       },
       "name" : "Following up and contacting clients",
-      "description" : "Functional Requirements For  for Following up and contacting clients",
+      "description" : "Functional Requirements For Following up and contacting clients",
       "exampleBoolean" : true
     },
     {
@@ -2361,7 +2361,7 @@
         "reference" : "Requirements/HIVNonFunctionalRequirements"
       },
       "name" : "HIV non Functional Requirements",
-      "description" : "Non Functional Requirements For  for HIV",
+      "description" : "Non Functional Requirements For HIV",
       "exampleBoolean" : true
     },
     {
@@ -2505,7 +2505,7 @@
         "reference" : "Requirements/HIV.B.HIVtestingservices"
       },
       "name" : "HIV testing services",
-      "description" : "Functional Requirements For  for HIV testing services",
+      "description" : "Functional Requirements For HIV testing services",
       "exampleBoolean" : true
     },
     {
@@ -4821,7 +4821,7 @@
         "reference" : "Requirements/HIV.C.PrEPvisit"
       },
       "name" : "PrEP visit",
-      "description" : "Functional Requirements For  for PrEP visit",
+      "description" : "Functional Requirements For PrEP visit",
       "exampleBoolean" : true
     },
     {
@@ -5301,7 +5301,7 @@
         "reference" : "Requirements/HIV.I.Referral"
       },
       "name" : "Referral",
-      "description" : "Functional Requirements For  for Referral",
+      "description" : "Functional Requirements For Referral",
       "exampleBoolean" : true
     },
     {
@@ -5337,7 +5337,7 @@
         "reference" : "Requirements/HIV.A.Registration"
       },
       "name" : "Registration",
-      "description" : "Functional Requirements For  for Registration",
+      "description" : "Functional Requirements For Registration",
       "exampleBoolean" : true
     },
     {
