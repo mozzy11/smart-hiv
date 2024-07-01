@@ -35,6 +35,7 @@ dependencies:
   hl7.fhir.uv.cpg: current
   hl7.fhir.us.cqfmeasures: current
   fhir.cqf.common: 4.0.1
+  who.base: 0.1.0
 
 pages:
   index.md:
