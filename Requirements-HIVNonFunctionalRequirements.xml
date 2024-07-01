@@ -153,7 +153,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
     <valueCode value="active"/>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date">
-    <valueDateTime value="2024-07-01T14:01:13+00:00"/>
+    <valueDateTime value="2024-07-01T19:15:43+00:00"/>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher">
     <valueString value="WHO"/>
@@ -173,7 +173,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.001"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - confidentiality&#xA;Provide password protected access for authorized users  "/>
+      <valueMarkdown value="Category : Security - confidentiality&#xA;Provide password protected access for authorized users"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -181,7 +181,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.002"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - confidentiality&#xA;Provide a means to ensure confidentiality and privacy of personal health information "/>
+      <valueMarkdown value="Category : Security - confidentiality&#xA;Provide a means to ensure confidentiality and privacy of personal health information"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -189,7 +189,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.003"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - confidentiality&#xA;Provide ability for authorized users to view confidential data   "/>
+      <valueMarkdown value="Category : Security - confidentiality&#xA;Provide ability for authorized users to view confidential data"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -197,7 +197,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.004"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - confidentiality&#xA;Anonymise data that is exported from the system "/>
+      <valueMarkdown value="Category : Security - confidentiality&#xA;Anonymise data that is exported from the system"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -205,7 +205,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.005"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - confidentiality&#xA;Prevent remembering username and password "/>
+      <valueMarkdown value="Category : Security - confidentiality&#xA;Prevent remembering username and password"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -213,7 +213,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.006"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - confidentiality&#xA;Log out the user after specified time of inactivity "/>
+      <valueMarkdown value="Category : Security - confidentiality&#xA;Log out the user after specified time of inactivity"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -221,7 +221,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.007"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - confidentiality&#xA;Provide encrypted communication between components "/>
+      <valueMarkdown value="Category : Security - confidentiality&#xA;Provide encrypted communication between components"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -229,7 +229,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.008"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - authentication&#xA;Notify the user to change their password the first time they log in "/>
+      <valueMarkdown value="Category : Security - authentication&#xA;Notify the user to change their password the first time they log in"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -237,7 +237,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.009"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - authentication&#xA;Adhere to complex password requirements "/>
+      <valueMarkdown value="Category : Security - authentication&#xA;Adhere to complex password requirements"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -245,7 +245,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.010"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - authentication&#xA;Provide a mechanism to securely change a user's password "/>
+      <valueMarkdown value="Category : Security - authentication&#xA;Provide a mechanism to securely change a user's password"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -253,7 +253,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.011"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - authentication&#xA;Notify the user of password change to their account "/>
+      <valueMarkdown value="Category : Security - authentication&#xA;Notify the user of password change to their account"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -261,7 +261,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.012"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - authentication&#xA;Reset a user's password in a secure manner "/>
+      <valueMarkdown value="Category : Security - authentication&#xA;Reset a user's password in a secure manner"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -269,7 +269,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.013"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - authentication&#xA;Lock a user out after a specified number of wrong password attempts "/>
+      <valueMarkdown value="Category : Security - authentication&#xA;Lock a user out after a specified number of wrong password attempts"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -277,7 +277,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.014"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - authentication&#xA;Notify a user if their account is locked due to wrong password attempts "/>
+      <valueMarkdown value="Category : Security - authentication&#xA;Notify a user if their account is locked due to wrong password attempts"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -285,7 +285,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.015"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - authentication&#xA;Provide role-based access to the system "/>
+      <valueMarkdown value="Category : Security - authentication&#xA;Provide role-based access to the system"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -293,7 +293,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.016"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - audit trail and logs&#xA;Log system logins and logouts "/>
+      <valueMarkdown value="Category : Security - audit trail and logs&#xA;Log system logins and logouts"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -301,7 +301,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.017"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - audit trail and logs&#xA;Record all authentication violations "/>
+      <valueMarkdown value="Category : Security - audit trail and logs&#xA;Record all authentication violations"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -309,7 +309,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.018"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - audit trail and logs&#xA;Log all activities performed by the user, including date and time stamp "/>
+      <valueMarkdown value="Category : Security - audit trail and logs&#xA;Log all activities performed by the user, including date and time stamp"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -317,7 +317,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.019"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - audit trail and logs&#xA;Log access to views of individual client records "/>
+      <valueMarkdown value="Category : Security - audit trail and logs&#xA;Log access to views of individual client records"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -325,7 +325,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.020"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - audit trail and logs&#xA;Log access to data summaries, reports, analysis and visualization features "/>
+      <valueMarkdown value="Category : Security - audit trail and logs&#xA;Log access to data summaries, reports, analysis and visualization features"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -333,7 +333,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.021"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - audit trail and logs&#xA;Log exchange of data with other systems "/>
+      <valueMarkdown value="Category : Security - audit trail and logs&#xA;Log exchange of data with other systems"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -341,7 +341,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.022"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - audit trail and logs&#xA;Generate analysis of the usage of different system features and reports  "/>
+      <valueMarkdown value="Category : Security - audit trail and logs&#xA;Generate analysis of the usage of different system features and reports"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -349,7 +349,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.023"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - audit trail and logs&#xA;Log all data and system errors "/>
+      <valueMarkdown value="Category : Security - audit trail and logs&#xA;Log all data and system errors"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -357,7 +357,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.024"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - user management&#xA;Allow user with permission to create a new user and temporary password "/>
+      <valueMarkdown value="Category : Security - user management&#xA;Allow user with permission to create a new user and temporary password"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -365,7 +365,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.025"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - user management&#xA;Provide role-based access   "/>
+      <valueMarkdown value="Category : Security - user management&#xA;Provide role-based access"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -373,7 +373,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.026"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - user management&#xA;Allow roles to be associated with specific geographical areas and/or health facilities "/>
+      <valueMarkdown value="Category : Security - user management&#xA;Allow roles to be associated with specific geographical areas and/or health facilities"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -381,7 +381,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.027"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - user management&#xA;Allow cascading user management and assignment of roles "/>
+      <valueMarkdown value="Category : Security - user management&#xA;Allow cascading user management and assignment of roles"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -389,7 +389,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.028"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - user management&#xA;Allow user to change their own password "/>
+      <valueMarkdown value="Category : Security - user management&#xA;Allow user to change their own password"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -397,7 +397,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.029"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - user management&#xA;Allow admin user to request password reset "/>
+      <valueMarkdown value="Category : Security - user management&#xA;Allow admin user to request password reset"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -405,7 +405,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.030"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - user management&#xA;Notify the user to regularly change the user's password "/>
+      <valueMarkdown value="Category : Security - user management&#xA;Notify the user to regularly change the user's password"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -413,7 +413,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.031"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - user management&#xA;Allow each user to be assigned to one or more roles "/>
+      <valueMarkdown value="Category : Security - user management&#xA;Allow each user to be assigned to one or more roles"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -421,7 +421,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.032"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : Security - user management&#xA;Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing  "/>
+      <valueMarkdown value="Category : Security - user management&#xA;Support definitions of unlimited roles and assigned levels of access, viewing, entry, editing and auditing"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -429,7 +429,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.033"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - general&#xA;Provide a unique version number for each revision  "/>
+      <valueMarkdown value="Category : System requirements - general&#xA;Provide a unique version number for each revision"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -437,7 +437,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.034"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - general&#xA;Enable earlier versions of a record to be recoverable "/>
+      <valueMarkdown value="Category : System requirements - general&#xA;Enable earlier versions of a record to be recoverable"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -445,7 +445,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.035"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - general&#xA;Enable deployment in an environment subject to power loss "/>
+      <valueMarkdown value="Category : System requirements - general&#xA;Enable deployment in an environment subject to power loss"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -453,7 +453,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.036"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - general&#xA;Work in an environment that is subject to loss of connectivity "/>
+      <valueMarkdown value="Category : System requirements - general&#xA;Work in an environment that is subject to loss of connectivity"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -461,7 +461,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.037"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - general&#xA;Generate IDs that are unique across different installations or sites "/>
+      <valueMarkdown value="Category : System requirements - general&#xA;Generate IDs that are unique across different installations or sites"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -469,7 +469,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.038"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - general&#xA;Report version number when saving data to the database "/>
+      <valueMarkdown value="Category : System requirements - general&#xA;Report version number when saving data to the database"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -477,7 +477,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.039"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - general&#xA;Be designed to be flexible enough to accommodate necessary changes in the future "/>
+      <valueMarkdown value="Category : System requirements - general&#xA;Be designed to be flexible enough to accommodate necessary changes in the future"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -485,7 +485,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.040"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - general&#xA;Allow for offline and online functionality "/>
+      <valueMarkdown value="Category : System requirements - general&#xA;Allow for offline and online functionality"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -493,7 +493,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.041"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - general&#xA;Show the number of records that are not yet synchronised "/>
+      <valueMarkdown value="Category : System requirements - general&#xA;Show the number of records that are not yet synchronised"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -501,7 +501,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.042"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - general&#xA;Have ability to easily back up information "/>
+      <valueMarkdown value="Category : System requirements - general&#xA;Have ability to easily back up information"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -509,7 +509,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.043"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - general&#xA;Warn user if no valid backup for more than a predefined number of days "/>
+      <valueMarkdown value="Category : System requirements - general&#xA;Warn user if no valid backup for more than a predefined number of days"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -517,7 +517,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.044"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - general&#xA;Must have the ability to store images and other unstructured data "/>
+      <valueMarkdown value="Category : System requirements - general&#xA;Must have the ability to store images and other unstructured data"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -525,7 +525,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.045"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - scalability&#xA;Scalable to accommodate new demands "/>
+      <valueMarkdown value="Category : System requirements - scalability&#xA;Scalable to accommodate new demands"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -533,7 +533,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.046"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - scalability&#xA;Be able to accommodate at least [x number of] health facilities "/>
+      <valueMarkdown value="Category : System requirements - scalability&#xA;Be able to accommodate at least [x number of] health facilities"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -541,7 +541,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.047"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - scalability&#xA;Be able to accommodate at least [x number of] concurrent users "/>
+      <valueMarkdown value="Category : System requirements - scalability&#xA;Be able to accommodate at least [x number of] concurrent users"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -549,7 +549,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.048"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - usability&#xA;Be user-friendly for people with low computer literacy "/>
+      <valueMarkdown value="Category : System requirements - usability&#xA;Be user-friendly for people with low computer literacy"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -557,7 +557,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.049"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - usability&#xA;Provide informative error messages and tooltips   "/>
+      <valueMarkdown value="Category : System requirements - usability&#xA;Provide informative error messages and tooltips"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -565,7 +565,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.050"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - usability&#xA;Alert the user when navigating away from the form without saving "/>
+      <valueMarkdown value="Category : System requirements - usability&#xA;Alert the user when navigating away from the form without saving"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -573,7 +573,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.051"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - usability&#xA;Support real time data entry validation and feedback to prevent data entry errors from being recorded "/>
+      <valueMarkdown value="Category : System requirements - usability&#xA;Support real time data entry validation and feedback to prevent data entry errors from being recorded"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -581,7 +581,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.052"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - usability&#xA;Simplify data recording through predefined drop-down or searchable lists, radio buttons, check boxes "/>
+      <valueMarkdown value="Category : System requirements - usability&#xA;Simplify data recording through predefined drop-down or searchable lists, radio buttons, check boxes"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -589,7 +589,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.053"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - usability&#xA;Support multiple languages "/>
+      <valueMarkdown value="Category : System requirements - usability&#xA;Support multiple languages"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -597,7 +597,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.054"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - usability&#xA;Use industry standard user interface practices and apply them in a consistent manner throughout the system "/>
+      <valueMarkdown value="Category : System requirements - usability&#xA;Use industry standard user interface practices and apply them in a consistent manner throughout the system"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -605,7 +605,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.055"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - usability&#xA;Easy to learn and intuitive to enable user to navigate between pages "/>
+      <valueMarkdown value="Category : System requirements - usability&#xA;Easy to learn and intuitive to enable user to navigate between pages"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -613,7 +613,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.056"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - usability&#xA;Provide guidance to the users to better support clinical guidelines and best clinical practices "/>
+      <valueMarkdown value="Category : System requirements - usability&#xA;Provide guidance to the users to better support clinical guidelines and best clinical practices"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -637,7 +637,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.059"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - configuration&#xA;Configure the system centrally "/>
+      <valueMarkdown value="Category : System requirements - configuration&#xA;Configure the system centrally"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -653,7 +653,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.061"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - configuration&#xA;Configure error messages "/>
+      <valueMarkdown value="Category : System requirements - configuration&#xA;Configure error messages"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -661,7 +661,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.062"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - configuration&#xA;Configure workflows and business rules to accommodate differences between facilities "/>
+      <valueMarkdown value="Category : System requirements - configuration&#xA;Configure workflows and business rules to accommodate differences between facilities"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -669,7 +669,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.063"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - interoperability&#xA;Communicate with external systems through mediators "/>
+      <valueMarkdown value="Category : System requirements - interoperability&#xA;Communicate with external systems through mediators"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -685,7 +685,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.065"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - interoperability&#xA;Be interoperable with external systems through mediators "/>
+      <valueMarkdown value="Category : System requirements - interoperability&#xA;Be interoperable with external systems through mediators"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -693,7 +693,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.066"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - interoperability&#xA;Link with insurance systems to verify eligibility and submit claims "/>
+      <valueMarkdown value="Category : System requirements - interoperability&#xA;Link with insurance systems to verify eligibility and submit claims"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -701,7 +701,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.067"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - interoperability&#xA;Exchange data with other approved systems "/>
+      <valueMarkdown value="Category : System requirements - interoperability&#xA;Exchange data with other approved systems"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -717,7 +717,7 @@ Allow for data exchange and efficient synchronization across multiple facilities
       <valueId value="HIV.NFXNREQ.069"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="Category : System requirements - hardware and connectivity&#xA;Allow for data exchange and efficient synchronization across multiple facilities and points of service when internet is available, even when it is intermittent and slow  "/>
+      <valueMarkdown value="Category : System requirements - hardware and connectivity&#xA;Allow for data exchange and efficient synchronization across multiple facilities and points of service when internet is available, even when it is intermittent and slow"/>
     </extension>
   </extension>
   <code>

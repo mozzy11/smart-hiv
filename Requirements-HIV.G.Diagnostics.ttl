@@ -23,7 +23,7 @@
      fhir:value [ fhir:v "active" ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "2024-07-01T14:01:13+00:00"^^xsd:dateTime ]
+     fhir:value [ fhir:v "2024-07-01T19:15:43+00:00"^^xsd:dateTime ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "WHO" ]
@@ -45,7 +45,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.046" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want the system to be capable to receive diagnosis test results from laboratories or other test centers \nSo that I can have a faster patient follow-up  " ]
+       fhir:value [ fhir:v "As a Health worker\nI want the system to be capable to receive diagnosis test results from laboratories or other test centers\nSo that I can have a faster patient follow-up" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] ) ; # 

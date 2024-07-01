@@ -19,7 +19,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date",
-    "valueDateTime" : "2024-07-01T14:01:13+00:00"
+    "valueDateTime" : "2024-07-01T19:15:43+00:00"
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher",
@@ -45,7 +45,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement",
-      "valueMarkdown" : "As a Health worker\nI want the system to be capable to receive diagnosis test results from laboratories or other test centers \nSo that I can have a faster patient follow-up  "
+      "valueMarkdown" : "As a Health worker\nI want the system to be capable to receive diagnosis test results from laboratories or other test centers\nSo that I can have a faster patient follow-up"
     }],
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
   }],

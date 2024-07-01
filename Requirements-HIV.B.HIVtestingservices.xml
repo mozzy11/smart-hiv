@@ -54,7 +54,7 @@ So that I do not have to calculate this myself</p>
     <valueCode value="active"/>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date">
-    <valueDateTime value="2024-07-01T14:01:13+00:00"/>
+    <valueDateTime value="2024-07-01T19:15:43+00:00"/>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher">
     <valueString value="WHO"/>
@@ -74,7 +74,7 @@ So that I do not have to calculate this myself</p>
       <valueId value="HIV.FXNREQ.022"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker&#xA;I want to identify the date of the last attended contact&#xA;So that I can ensure the client is receiving services according to recommended schedule  "/>
+      <valueMarkdown value="As a Health worker&#xA;I want to identify the date of the last attended contact&#xA;So that I can ensure the client is receiving services according to recommended schedule"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -82,7 +82,7 @@ So that I do not have to calculate this myself</p>
       <valueId value="HIV.FXNREQ.023"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker&#xA;I want the system to highlight abnormal values&#xA;So that I can identify critical health issues or errors (if a data-entry issue)  "/>
+      <valueMarkdown value="As a Health worker&#xA;I want the system to highlight abnormal values&#xA;So that I can identify critical health issues or errors (if a data-entry issue)"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -90,7 +90,7 @@ So that I do not have to calculate this myself</p>
       <valueId value="HIV.FXNREQ.024"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker&#xA;I want to see which clinical staging conditions or symptoms the client has already experienced &#xA;So that the information may be used to help classify the client’s HIV disease severity.   "/>
+      <valueMarkdown value="As a Health worker&#xA;I want to see which clinical staging conditions or symptoms the client has already experienced&#xA;So that the information may be used to help classify the client’s HIV disease severity."/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -98,7 +98,7 @@ So that I do not have to calculate this myself</p>
       <valueId value="HIV.FXNREQ.025"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker&#xA;I want the system to provide real-time range checks and integrity checks on data &#xA;So that I can ensure entry of accurate information and reduce errors  "/>
+      <valueMarkdown value="As a Health worker&#xA;I want the system to provide real-time range checks and integrity checks on data&#xA;So that I can ensure entry of accurate information and reduce errors"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -106,7 +106,7 @@ So that I do not have to calculate this myself</p>
       <valueId value="HIV.FXNREQ.026"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker or data entry clerk&#xA;I want to record the HIV status of partners or family members of clients, with proper consent&#xA;So that I can provide specialized care (for example, in serodiscordant couples)  "/>
+      <valueMarkdown value="As a Health worker or data entry clerk&#xA;I want to record the HIV status of partners or family members of clients, with proper consent&#xA;So that I can provide specialized care (for example, in serodiscordant couples)"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -114,7 +114,7 @@ So that I do not have to calculate this myself</p>
       <valueId value="HIV.FXNREQ.027"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker&#xA;I want to review past medical history previously entered&#xA;So that I can provide appropriate services according to the latest clinical protocols  "/>
+      <valueMarkdown value="As a Health worker&#xA;I want to review past medical history previously entered&#xA;So that I can provide appropriate services according to the latest clinical protocols"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -122,7 +122,7 @@ So that I do not have to calculate this myself</p>
       <valueId value="HIV.FXNREQ.028"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker or data entry clerk&#xA;I want to have different question and language prompts when clients are from different populations&#xA;So that I can better support populations such as adolescents, paediatric clients and caregivers and their unique needs.   "/>
+      <valueMarkdown value="As a Health worker or data entry clerk&#xA;I want to have different question and language prompts when clients are from different populations&#xA;So that I can better support populations such as adolescents, paediatric clients and caregivers and their unique needs."/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -130,7 +130,7 @@ So that I do not have to calculate this myself</p>
       <valueId value="HIV.FXNREQ.029"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker&#xA;I want a list of tests that I (the health worker) can order&#xA;So that I can provide appropriate services according to the latest clinical protocols  "/>
+      <valueMarkdown value="As a Health worker&#xA;I want a list of tests that I (the health worker) can order&#xA;So that I can provide appropriate services according to the latest clinical protocols"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -138,7 +138,7 @@ So that I do not have to calculate this myself</p>
       <valueId value="HIV.FXNREQ.030"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker&#xA;I want to print a requisition for lab tests, which includes required information for performing the test&#xA;So that I can provide the client with list of test required  "/>
+      <valueMarkdown value="As a Health worker&#xA;I want to print a requisition for lab tests, which includes required information for performing the test&#xA;So that I can provide the client with list of test required"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -146,7 +146,7 @@ So that I do not have to calculate this myself</p>
       <valueId value="HIV.FXNREQ.031"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker&#xA;I want the system to suggest appropriate treatments/investigations based on data entered&#xA;So that I can provide appropriate services according to the latest clinical protocols  "/>
+      <valueMarkdown value="As a Health worker&#xA;I want the system to suggest appropriate treatments/investigations based on data entered&#xA;So that I can provide appropriate services according to the latest clinical protocols"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -154,7 +154,7 @@ So that I do not have to calculate this myself</p>
       <valueId value="HIV.FXNREQ.032"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker&#xA;I want to see where I can refer clients for specialized counselling that I’m not qualified to provide&#xA;So that I can direct clients to where they can get the confidential and sensitive support they need  "/>
+      <valueMarkdown value="As a Health worker&#xA;I want to see where I can refer clients for specialized counselling that I’m not qualified to provide&#xA;So that I can direct clients to where they can get the confidential and sensitive support they need"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -162,7 +162,7 @@ So that I do not have to calculate this myself</p>
       <valueId value="HIV.FXNREQ.033"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker&#xA;I want to see a schedule of available days&#xA;So that I can notify the client when to return for subsequent contact  "/>
+      <valueMarkdown value="As a Health worker&#xA;I want to see a schedule of available days&#xA;So that I can notify the client when to return for subsequent contact"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -170,7 +170,7 @@ So that I do not have to calculate this myself</p>
       <valueId value="HIV.FXNREQ.034"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker&#xA;I want to have the system automatically calculate the date when the client should return for care based on, for example, risk, prevalence or clinical stability&#xA;So that I do not have to calculate this myself  "/>
+      <valueMarkdown value="As a Health worker&#xA;I want to have the system automatically calculate the date when the client should return for care based on, for example, risk, prevalence or clinical stability&#xA;So that I do not have to calculate this myself"/>
     </extension>
   </extension>
   <code>

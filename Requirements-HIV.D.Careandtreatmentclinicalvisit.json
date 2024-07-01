@@ -19,7 +19,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date",
-    "valueDateTime" : "2024-07-01T14:01:13+00:00"
+    "valueDateTime" : "2024-07-01T19:15:43+00:00"
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher",
@@ -45,7 +45,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement",
-      "valueMarkdown" : "As a Health worker\nI want to have access to clients’ ART history in one place \nSo that I can support clients with adherence and ensure their regimens are working.   "
+      "valueMarkdown" : "As a Health worker\nI want to have access to clients’ ART history in one place\nSo that I can support clients with adherence and ensure their regimens are working."
     }],
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
   },
@@ -56,7 +56,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement",
-      "valueMarkdown" : "As a Health worker\nI want to have access to key test results in one place, such as viral load and CD4 counts \nSo that I can better monitor how a client is responding to treatment.    "
+      "valueMarkdown" : "As a Health worker\nI want to have access to key test results in one place, such as viral load and CD4 counts\nSo that I can better monitor how a client is responding to treatment."
     }],
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
   },
@@ -67,7 +67,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement",
-      "valueMarkdown" : "As a Health worker\nI want to see which criteria in the decision logic was met to indicate possible treatment failure \nSo that I can review additional criteria not in the digital record and make a clinical judgment  "
+      "valueMarkdown" : "As a Health worker\nI want to see which criteria in the decision logic was met to indicate possible treatment failure\nSo that I can review additional criteria not in the digital record and make a clinical judgment"
     }],
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
   },
@@ -78,7 +78,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement",
-      "valueMarkdown" : "As a Health worker\nI want to be able to expedite diagnostic orders \nSo that clients who may have urgent care needs can be identified, such as infants with HIV  "
+      "valueMarkdown" : "As a Health worker\nI want to be able to expedite diagnostic orders\nSo that clients who may have urgent care needs can be identified, such as infants with HIV"
     }],
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
   },
@@ -89,7 +89,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement",
-      "valueMarkdown" : "As a Health worker\nI want to have additional screenings and diagnostics recommended based on the medications the client is being prescribed\nSo that the necessary screenings and diagnostics are identified during the visit.   "
+      "valueMarkdown" : "As a Health worker\nI want to have additional screenings and diagnostics recommended based on the medications the client is being prescribed\nSo that the necessary screenings and diagnostics are identified during the visit."
     }],
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
   },
@@ -100,7 +100,7 @@
     },
     {
       "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement",
-      "valueMarkdown" : "As a Health worker\nI want the system to provide context-sensitive, real-time decision support in response to entry of clinical data (alerts, advice, resources)\nSo that I can provide appropriate services according to the latest clinical protocols  "
+      "valueMarkdown" : "As a Health worker\nI want the system to provide context-sensitive, real-time decision support in response to entry of clinical data (alerts, advice, resources)\nSo that I can provide appropriate services according to the latest clinical protocols"
     }],
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"
   }],

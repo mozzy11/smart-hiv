@@ -23,7 +23,7 @@
      fhir:value [ fhir:v "active" ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "2024-07-01T14:01:13+00:00"^^xsd:dateTime ]
+     fhir:value [ fhir:v "2024-07-01T19:15:43+00:00"^^xsd:dateTime ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "WHO" ]
@@ -45,7 +45,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.040" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want to have access to clients’ ART history in one place \nSo that I can support clients with adherence and ensure their regimens are working.   " ]
+       fhir:value [ fhir:v "As a Health worker\nI want to have access to clients’ ART history in one place\nSo that I can support clients with adherence and ensure their regimens are working." ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -54,7 +54,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.041" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want to have access to key test results in one place, such as viral load and CD4 counts \nSo that I can better monitor how a client is responding to treatment.    " ]
+       fhir:value [ fhir:v "As a Health worker\nI want to have access to key test results in one place, such as viral load and CD4 counts\nSo that I can better monitor how a client is responding to treatment." ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -63,7 +63,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.042" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want to see which criteria in the decision logic was met to indicate possible treatment failure \nSo that I can review additional criteria not in the digital record and make a clinical judgment  " ]
+       fhir:value [ fhir:v "As a Health worker\nI want to see which criteria in the decision logic was met to indicate possible treatment failure\nSo that I can review additional criteria not in the digital record and make a clinical judgment" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -72,7 +72,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.043" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want to be able to expedite diagnostic orders \nSo that clients who may have urgent care needs can be identified, such as infants with HIV  " ]
+       fhir:value [ fhir:v "As a Health worker\nI want to be able to expedite diagnostic orders\nSo that clients who may have urgent care needs can be identified, such as infants with HIV" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -81,7 +81,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.044" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want to have additional screenings and diagnostics recommended based on the medications the client is being prescribed\nSo that the necessary screenings and diagnostics are identified during the visit.   " ]
+       fhir:value [ fhir:v "As a Health worker\nI want to have additional screenings and diagnostics recommended based on the medications the client is being prescribed\nSo that the necessary screenings and diagnostics are identified during the visit." ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -90,7 +90,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.045" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want the system to provide context-sensitive, real-time decision support in response to entry of clinical data (alerts, advice, resources)\nSo that I can provide appropriate services according to the latest clinical protocols  " ]
+       fhir:value [ fhir:v "As a Health worker\nI want the system to provide context-sensitive, real-time decision support in response to entry of clinical data (alerts, advice, resources)\nSo that I can provide appropriate services according to the latest clinical protocols" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] ) ; # 

@@ -24,7 +24,7 @@ So that I can better identify patients that are truly lost to follow-up.</p>
     <valueCode value="active"/>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date">
-    <valueDateTime value="2024-07-01T14:01:13+00:00"/>
+    <valueDateTime value="2024-07-01T19:15:43+00:00"/>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher">
     <valueString value="WHO"/>
@@ -44,7 +44,7 @@ So that I can better identify patients that are truly lost to follow-up.</p>
       <valueId value="HIV.FXNREQ.047"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker or data entry clerk&#xA;I want to provide a list of scheduled contact dates to allow for defaulters to be traced&#xA;So that I can track and follow-up clients requiring services  "/>
+      <valueMarkdown value="As a Health worker or data entry clerk&#xA;I want to provide a list of scheduled contact dates to allow for defaulters to be traced&#xA;So that I can track and follow-up clients requiring services"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -52,7 +52,7 @@ So that I can better identify patients that are truly lost to follow-up.</p>
       <valueId value="HIV.FXNREQ.048"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Facility or community staff member&#xA;I want to be able to identify clients who tested positive for HIV but have not linked to care&#xA;So that I can follow up with clients who have not initiated care or may not have received confirmatory testing.    "/>
+      <valueMarkdown value="As a Facility or community staff member&#xA;I want to be able to identify clients who tested positive for HIV but have not linked to care&#xA;So that I can follow up with clients who have not initiated care or may not have received confirmatory testing."/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -60,7 +60,7 @@ So that I can better identify patients that are truly lost to follow-up.</p>
       <valueId value="HIV.FXNREQ.049"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Facility or community staff member&#xA;I want to record when a client who self-reported as transferring is confirmed to have transferred&#xA;So that I can better identify patients that are truly lost to follow-up.    "/>
+      <valueMarkdown value="As a Facility or community staff member&#xA;I want to record when a client who self-reported as transferring is confirmed to have transferred&#xA;So that I can better identify patients that are truly lost to follow-up."/>
     </extension>
   </extension>
   <code>

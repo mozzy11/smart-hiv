@@ -23,7 +23,7 @@
      fhir:value [ fhir:v "active" ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "2024-07-01T14:01:13+00:00"^^xsd:dateTime ]
+     fhir:value [ fhir:v "2024-07-01T19:15:43+00:00"^^xsd:dateTime ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "WHO" ]
@@ -45,7 +45,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.022" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want to identify the date of the last attended contact\nSo that I can ensure the client is receiving services according to recommended schedule  " ]
+       fhir:value [ fhir:v "As a Health worker\nI want to identify the date of the last attended contact\nSo that I can ensure the client is receiving services according to recommended schedule" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -54,7 +54,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.023" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want the system to highlight abnormal values\nSo that I can identify critical health issues or errors (if a data-entry issue)  " ]
+       fhir:value [ fhir:v "As a Health worker\nI want the system to highlight abnormal values\nSo that I can identify critical health issues or errors (if a data-entry issue)" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -63,7 +63,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.024" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want to see which clinical staging conditions or symptoms the client has already experienced \nSo that the information may be used to help classify the client’s HIV disease severity.   " ]
+       fhir:value [ fhir:v "As a Health worker\nI want to see which clinical staging conditions or symptoms the client has already experienced\nSo that the information may be used to help classify the client’s HIV disease severity." ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -72,7 +72,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.025" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want the system to provide real-time range checks and integrity checks on data \nSo that I can ensure entry of accurate information and reduce errors  " ]
+       fhir:value [ fhir:v "As a Health worker\nI want the system to provide real-time range checks and integrity checks on data\nSo that I can ensure entry of accurate information and reduce errors" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -81,7 +81,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.026" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker or data entry clerk\nI want to record the HIV status of partners or family members of clients, with proper consent\nSo that I can provide specialized care (for example, in serodiscordant couples)  " ]
+       fhir:value [ fhir:v "As a Health worker or data entry clerk\nI want to record the HIV status of partners or family members of clients, with proper consent\nSo that I can provide specialized care (for example, in serodiscordant couples)" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -90,7 +90,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.027" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want to review past medical history previously entered\nSo that I can provide appropriate services according to the latest clinical protocols  " ]
+       fhir:value [ fhir:v "As a Health worker\nI want to review past medical history previously entered\nSo that I can provide appropriate services according to the latest clinical protocols" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -99,7 +99,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.028" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker or data entry clerk\nI want to have different question and language prompts when clients are from different populations\nSo that I can better support populations such as adolescents, paediatric clients and caregivers and their unique needs.   " ]
+       fhir:value [ fhir:v "As a Health worker or data entry clerk\nI want to have different question and language prompts when clients are from different populations\nSo that I can better support populations such as adolescents, paediatric clients and caregivers and their unique needs." ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -108,7 +108,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.029" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want a list of tests that I (the health worker) can order\nSo that I can provide appropriate services according to the latest clinical protocols  " ]
+       fhir:value [ fhir:v "As a Health worker\nI want a list of tests that I (the health worker) can order\nSo that I can provide appropriate services according to the latest clinical protocols" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -117,7 +117,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.030" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want to print a requisition for lab tests, which includes required information for performing the test\nSo that I can provide the client with list of test required  " ]
+       fhir:value [ fhir:v "As a Health worker\nI want to print a requisition for lab tests, which includes required information for performing the test\nSo that I can provide the client with list of test required" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -126,7 +126,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.031" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want the system to suggest appropriate treatments/investigations based on data entered\nSo that I can provide appropriate services according to the latest clinical protocols  " ]
+       fhir:value [ fhir:v "As a Health worker\nI want the system to suggest appropriate treatments/investigations based on data entered\nSo that I can provide appropriate services according to the latest clinical protocols" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -135,7 +135,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.032" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want to see where I can refer clients for specialized counselling that I’m not qualified to provide\nSo that I can direct clients to where they can get the confidential and sensitive support they need  " ]
+       fhir:value [ fhir:v "As a Health worker\nI want to see where I can refer clients for specialized counselling that I’m not qualified to provide\nSo that I can direct clients to where they can get the confidential and sensitive support they need" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -144,7 +144,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.033" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want to see a schedule of available days\nSo that I can notify the client when to return for subsequent contact  " ]
+       fhir:value [ fhir:v "As a Health worker\nI want to see a schedule of available days\nSo that I can notify the client when to return for subsequent contact" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -153,7 +153,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.034" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker\nI want to have the system automatically calculate the date when the client should return for care based on, for example, risk, prevalence or clinical stability\nSo that I do not have to calculate this myself  " ]
+       fhir:value [ fhir:v "As a Health worker\nI want to have the system automatically calculate the date when the client should return for care based on, for example, risk, prevalence or clinical stability\nSo that I do not have to calculate this myself" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] ) ; # 

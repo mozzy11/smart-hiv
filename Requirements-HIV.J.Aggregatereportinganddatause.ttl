@@ -23,7 +23,7 @@
      fhir:value [ fhir:v "active" ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date"^^xsd:anyURI ] ;
-     fhir:value [ fhir:v "2024-07-01T14:01:13+00:00"^^xsd:dateTime ]
+     fhir:value [ fhir:v "2024-07-01T19:15:43+00:00"^^xsd:dateTime ]
   ] [
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher"^^xsd:anyURI ] ;
      fhir:value [ fhir:v "WHO" ]
@@ -45,7 +45,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.056" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Facility staff member\nI want to produce a range of prepared and ad hoc reports and analyses\nSo that I am able to use data collected at the facility, including for service delivery (beyond reporting purposes alone).   " ]
+       fhir:value [ fhir:v "As a Facility staff member\nI want to produce a range of prepared and ad hoc reports and analyses\nSo that I am able to use data collected at the facility, including for service delivery (beyond reporting purposes alone)." ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -54,7 +54,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.057" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Facility staff member\nI want to be able to identify clients that left before a visit was completed \nSo that I can better monitor facility performance (for example, through wait times and clients leaving before completing a visit)  " ]
+       fhir:value [ fhir:v "As a Facility staff member\nI want to be able to identify clients that left before a visit was completed\nSo that I can better monitor facility performance (for example, through wait times and clients leaving before completing a visit)" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] [
@@ -63,7 +63,7 @@
        fhir:value [ fhir:v "HIV.FXNREQ.058" ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "As a Health worker or data entry clerk\nI want to be able to view data on my own performance and service delivery \nSo that I can understand trends and challenges and track my own performance over time  " ]
+       fhir:value [ fhir:v "As a Health worker or data entry clerk\nI want to be able to view data on my own performance and service delivery\nSo that I can understand trends and challenges and track my own performance over time" ]
      ] ) ;
      fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement"^^xsd:anyURI ]
   ] ) ; # 

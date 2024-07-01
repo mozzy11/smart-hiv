@@ -30,7 +30,7 @@ So that I can inform the client of their next contact</p>
     <valueCode value="active"/>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date">
-    <valueDateTime value="2024-07-01T14:01:13+00:00"/>
+    <valueDateTime value="2024-07-01T19:15:43+00:00"/>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher">
     <valueString value="WHO"/>
@@ -50,7 +50,7 @@ So that I can inform the client of their next contact</p>
       <valueId value="HIV.FXNREQ.035"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker&#xA;I want to be prompted to ask about conditions which would exclude a client from certain services&#xA;So that clients are not provided with services that may not be safe for them  "/>
+      <valueMarkdown value="As a Health worker&#xA;I want to be prompted to ask about conditions which would exclude a client from certain services&#xA;So that clients are not provided with services that may not be safe for them"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -58,7 +58,7 @@ So that I can inform the client of their next contact</p>
       <valueId value="HIV.FXNREQ.036"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker&#xA;I want to log the reason a client is not medically eligible for a method&#xA;So that the next provider has this information, client safety is better protected, and on a future visit it is easier to check whether a client is now eligible  "/>
+      <valueMarkdown value="As a Health worker&#xA;I want to log the reason a client is not medically eligible for a method&#xA;So that the next provider has this information, client safety is better protected, and on a future visit it is easier to check whether a client is now eligible"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -66,7 +66,7 @@ So that I can inform the client of their next contact</p>
       <valueId value="HIV.FXNREQ.037"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker&#xA;I want to be alerted if a client was previously not eligible for a method&#xA;So that I do not have to search through records, given I have limited time  "/>
+      <valueMarkdown value="As a Health worker&#xA;I want to be alerted if a client was previously not eligible for a method&#xA;So that I do not have to search through records, given I have limited time"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -74,7 +74,7 @@ So that I can inform the client of their next contact</p>
       <valueId value="HIV.FXNREQ.038"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker&#xA;I want to have flexibility to perform screenings and clinical activities based on my clinical judgment&#xA;So that I can screen clients for recommended, desirable or other tests in an efficient way  "/>
+      <valueMarkdown value="As a Health worker&#xA;I want to have flexibility to perform screenings and clinical activities based on my clinical judgment&#xA;So that I can screen clients for recommended, desirable or other tests in an efficient way"/>
     </extension>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement">
@@ -82,7 +82,7 @@ So that I can inform the client of their next contact</p>
       <valueId value="HIV.FXNREQ.039"/>
     </extension>
     <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.statement.requirement">
-      <valueMarkdown value="As a Health worker&#xA;I want to be able to input  custom schedules to allow for contacts on specific days and times, account for holidays, etc&#xA;So that I can inform the client of their next contact  "/>
+      <valueMarkdown value="As a Health worker&#xA;I want to be able to input  custom schedules to allow for contacts on specific days and times, account for holidays, etc&#xA;So that I can inform the client of their next contact"/>
     </extension>
   </extension>
   <code>
