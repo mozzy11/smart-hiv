@@ -26,6 +26,7 @@ Usage: #definition
   * required = false
   * repeats = false
   * readOnly = false
+  * answerValueSet = "#HIV.C.DE125"
 * item[+]
   * id = "HIV.C.DE129"
   * linkId = "HIV.C.DE129"

@@ -26,3 +26,4 @@ Usage: #definition
   * required = false
   * repeats = false
   * readOnly = false
+  * answerValueSet = "#HIV.E.DE75"

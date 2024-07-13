@@ -50,3 +50,4 @@ Usage: #definition
   * required = false
   * repeats = false
   * readOnly = false
+  * answerValueSet = "#HIV.A.DE5"
