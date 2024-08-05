@@ -3,7 +3,7 @@
 <Basic xmlns="http://hl7.org/fhir">
   <id value="HIVNonFunctionalRequirements"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Requirements HIVNonFunctionalRequirements</b></p><a name="HIVNonFunctionalRequirements"> </a><a name="hcHIVNonFunctionalRequirements"> </a><a name="hcHIVNonFunctionalRequirements-en-US"> </a><table class="grid"><tr><td><b><a name="HIV.NFXNREQ.001"> </a></b>HIV.NFXNREQ.001</td><td/><td><div><p>For Security - confidentiality ,
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Requirements HIVNonFunctionalRequirements</b></p><a name="HIVNonFunctionalRequirements"> </a><a name="hcHIVNonFunctionalRequirements"> </a><a name="HIVNonFunctionalRequirements-en-US"> </a><table class="grid"><tr><td><b><a name="HIV.NFXNREQ.001"> </a></b>HIV.NFXNREQ.001</td><td/><td><div><p>For Security - confidentiality ,
 Provide password protected access for authorized users</p>
 </div></td></tr><tr><td><b><a name="HIV.NFXNREQ.002"> </a></b>HIV.NFXNREQ.002</td><td/><td><div><p>For Security - confidentiality ,
 Provide a means to ensure confidentiality and privacy of personal health information</p>
@@ -147,13 +147,13 @@ Allow for data exchange and efficient synchronization across multiple facilities
     <valueUri value="http://smart.who.int/hiv/Requirements/HIVNonFunctionalRequirements"/>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.version">
-    <valueString value="0.1.0"/>
+    <valueString value="0.2.0"/>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.status">
     <valueCode value="active"/>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.date">
-    <valueDateTime value="2024-07-01T19:48:05+00:00"/>
+    <valueDateTime value="2024-08-05T14:13:53+00:00"/>
   </extension>
   <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-Requirements.publisher">
     <valueString value="WHO"/>

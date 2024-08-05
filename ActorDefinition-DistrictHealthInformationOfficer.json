@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition DistrictHealthInformationOfficer</b></p><a name=\"DistrictHealthInformationOfficer\"> </a><a name=\"hcDistrictHealthInformationOfficer\"> </a><a name=\"hcDistrictHealthInformationOfficer-en-US\"> </a><table class=\"grid\"><tr><td><b>Actor: DistrictHealthInformationOfficer </b></td><td>District health information officer</td><td>Type: person </td></tr><tr><td colspan=\"3\"/></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ActorDefinition DistrictHealthInformationOfficer</b></p><a name=\"DistrictHealthInformationOfficer\"> </a><a name=\"hcDistrictHealthInformationOfficer\"> </a><a name=\"DistrictHealthInformationOfficer-en-US\"> </a><table class=\"grid\"><tr><td><b>Actor: DistrictHealthInformationOfficer </b></td><td>District health information officer</td><td>Type: person </td></tr><tr><td colspan=\"3\"/></tr></table></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url",
@@ -14,7 +14,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version",
-    "valueString" : "0.1.0"
+    "valueString" : "0.2.0"
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name",
@@ -34,7 +34,7 @@
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date",
-    "valueDateTime" : "2024-07-01T19:48:05+00:00"
+    "valueDateTime" : "2024-08-05T14:13:53+00:00"
   },
   {
     "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher",
