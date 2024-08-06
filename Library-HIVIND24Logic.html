@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.1.15"}
-    h3,h4,h5,h6{--heading-prefix:"5.1.15"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.1.18"}
+    h3,h4,h5,h6{--heading-prefix:"5.1.18"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
 
       <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
@@ -315,7 +315,7 @@
         
           Draft
           
-            as of 2024-08-05
+            as of 2024-08-06
           
         
       </td>
@@ -435,11 +435,13 @@ using FHIR version '4.0.1'
 
 include HIVCommon version '0.0.1' called HIC
 include FHIRHelpers version '4.0.1'
-include FHIRCommon called FC
 include WHOCommon called WCom
+include HIVElements called HE
+include HIVIndicatorElements called HIE
 
 // Indicator Definition
 parameter &quot;Measurement Period&quot; Interval&lt;Date&gt; default Interval[@2023-01-01, @2023-01-30]
+parameter &quot;Intervention Interval&quot; System.Quantity default 7 days
 
 context Patient
 /* Populations */
@@ -451,6 +453,7 @@ context Patient
 define &quot;Initial Population&quot;:
   true
 
+
 /**
  * Numerator
  * 
@@ -459,7 +462,29 @@ define &quot;Initial Population&quot;:
  */
 
 define &quot;Numerator&quot;:
-  true
+  (exists(HE.&quot;PrEP service&quot; prep
+   where prep.effective.toInterval() starts before (start of HIC.&quot;First Negative Test within Measurement Period&quot;.effective.toInterval() + &quot;Intervention Interval&quot;)
+  and prep.effective.toInterval() starts after (start of HIC.&quot;First Negative Test within Measurement Period&quot;.effective.toInterval())
+   )
+  or 
+  exists(HE.&quot;OAMT&quot; t where t starts before (start of HIC.&quot;First Negative Test within Measurement Period&quot;.effective.toInterval() + &quot;Intervention Interval&quot;)
+      and t starts after (start of HIC.&quot;First Negative Test within Measurement Period&quot;.effective.toInterval()))
+  or 
+  exists(HE.&quot;NSP&quot; DUS where DUS.timing.toInterval() starts before (start of HIC.&quot;First Negative Test within Measurement Period&quot;.effective.toInterval() + &quot;Intervention Interval&quot;)
+  and DUS.timing.toInterval() starts after (start of HIC.&quot;First Negative Test within Measurement Period&quot;.effective.toInterval()))
+  or 
+  exists(HE.&quot;STI services&quot; STI where STI.performed.toInterval() starts before (start of HIC.&quot;First Negative Test within Measurement Period&quot;.effective.toInterval() + &quot;Intervention Interval&quot;)
+  and STI.performed.toInterval() starts after (start of HIC.&quot;First Negative Test within Measurement Period&quot;.effective.toInterval()))
+  or 
+  exists(HE.&quot;VMMC&quot; V where V.performed.toInterval() starts before (start of HIC.&quot;First Negative Test within Measurement Period&quot;.effective.toInterval() + &quot;Intervention Interval&quot;)
+  and V.performed.toInterval() starts after (start of HIC.&quot;First Negative Test within Measurement Period&quot;.effective.toInterval()))
+  or
+  exists(HE.&quot;Other PRV.DE8&quot; O
+    where O.effective.toInterval() starts before (start of HIC.&quot;First Negative Test within Measurement Period&quot;.effective.toInterval() + &quot;Intervention Interval&quot;)
+    and O.effective.toInterval() starts after (start of HIC.&quot;First Negative Test within Measurement Period&quot;.effective.toInterval())))
+  and
+  HIE.&quot;At elevated risk for HIV acquisition B.DE225&quot;
+
 
 
 /**
@@ -470,12 +495,38 @@ define &quot;Numerator&quot;:
  */
 
 define &quot;Denominator&quot;:
-  true
+  exists(HIC.&quot;Negative Tests within Measurement Period&quot;)
+  and HIE.&quot;At elevated risk for HIV acquisition B.DE225&quot;
     
 
 /* end Populations */
 
-</code></pre><p><code>No Content</code> (<code>application/elm+xml</code>)</p></div>
+
+/*
+ * Disaggregators
+ */
+
+define &quot;Administrative Gender Stratifier&quot;:
+	HIC.&quot;By Administrative Gender Stratifier&quot;
+
+define &quot;Age Stratifier&quot;:
+	HIC.&quot;By Age Stratifier 2&quot;
+
+define &quot;Geographic Region Stratifier&quot;:
+	HIC.&quot;By Geographic Region Stratifier&quot;
+
+define &quot;patientGroups Stratifier&quot;:
+	HIC.&quot;patientGroups&quot;
+
+define &quot;HIV prevention intervention&quot;:
+	HIC.&quot;HIV prevention intervention&quot;
+
+define &quot;Stratification&quot;:
+ HIC.&quot;By Administrative Gender Stratifier&quot;.code 
+  + ':' + HIC.&quot;By Age Stratifier 2&quot;
++ ':' + HIC.&quot;By Geographic Region Stratifier&quot;
++ Combine(HIC.patientGroups, ':')
++ Combine(HIC.&quot;HIV prevention intervention&quot;, ':')</code></pre><p><code>No Content</code> (<code>application/elm+xml</code>)</p></div>
 
   <!-- insert notes if present -->
   
@@ -500,7 +551,7 @@ define &quot;Denominator&quot;:
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.hiv#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 5, 2024 14:13+0000">2024-08-05</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.hiv#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 6, 2024 17:04+0000">2024-08-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

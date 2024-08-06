@@ -84,11 +84,13 @@ using FHIR version '4.0.1'
 
 include HIVCommon version '0.0.1' called HIC
 include FHIRHelpers version '4.0.1'
-include FHIRCommon called FC
 include WHOCommon called WCom
+include HIVElements called HE
+include HIVIndicatorElements called HIE
 
 // Indicator Definition
 parameter "Measurement Period" Interval<Date> default Interval[@2023-01-01, @2023-01-30]
+parameter "Intervention Interval" System.Quantity default 7 days
 
 context Patient
 /* Populations */
@@ -100,6 +102,7 @@ context Patient
 define "Initial Population":
   true
 
+
 /**
  * Numerator
  * 
@@ -108,7 +111,29 @@ define "Initial Population":
  */
 
 define "Numerator":
-  true
+  (exists(HE."PrEP service" prep
+   where prep.effective.toInterval() starts before (start of HIC."First Negative Test within Measurement Period".effective.toInterval() + "Intervention Interval")
+  and prep.effective.toInterval() starts after (start of HIC."First Negative Test within Measurement Period".effective.toInterval())
+   )
+  or 
+  exists(HE."OAMT" t where t starts before (start of HIC."First Negative Test within Measurement Period".effective.toInterval() + "Intervention Interval")
+      and t starts after (start of HIC."First Negative Test within Measurement Period".effective.toInterval()))
+  or 
+  exists(HE."NSP" DUS where DUS.timing.toInterval() starts before (start of HIC."First Negative Test within Measurement Period".effective.toInterval() + "Intervention Interval")
+  and DUS.timing.toInterval() starts after (start of HIC."First Negative Test within Measurement Period".effective.toInterval()))
+  or 
+  exists(HE."STI services" STI where STI.performed.toInterval() starts before (start of HIC."First Negative Test within Measurement Period".effective.toInterval() + "Intervention Interval")
+  and STI.performed.toInterval() starts after (start of HIC."First Negative Test within Measurement Period".effective.toInterval()))
+  or 
+  exists(HE."VMMC" V where V.performed.toInterval() starts before (start of HIC."First Negative Test within Measurement Period".effective.toInterval() + "Intervention Interval")
+  and V.performed.toInterval() starts after (start of HIC."First Negative Test within Measurement Period".effective.toInterval()))
+  or
+  exists(HE."Other PRV.DE8" O
+    where O.effective.toInterval() starts before (start of HIC."First Negative Test within Measurement Period".effective.toInterval() + "Intervention Interval")
+    and O.effective.toInterval() starts after (start of HIC."First Negative Test within Measurement Period".effective.toInterval())))
+  and
+  HIE."At elevated risk for HIV acquisition B.DE225"
+
 
 
 /**
@@ -119,8 +144,35 @@ define "Numerator":
  */
 
 define "Denominator":
-  true
+  exists(HIC."Negative Tests within Measurement Period")
+  and HIE."At elevated risk for HIV acquisition B.DE225"
     
 
 /* end Populations */
 
+
+/*
+ * Disaggregators
+ */
+
+define "Administrative Gender Stratifier":
+	HIC."By Administrative Gender Stratifier"
+
+define "Age Stratifier":
+	HIC."By Age Stratifier 2"
+
+define "Geographic Region Stratifier":
+	HIC."By Geographic Region Stratifier"
+
+define "patientGroups Stratifier":
+	HIC."patientGroups"
+
+define "HIV prevention intervention":
+	HIC."HIV prevention intervention"
+
+define "Stratification":
+ HIC."By Administrative Gender Stratifier".code 
+  + ':' + HIC."By Age Stratifier 2"
++ ':' + HIC."By Geographic Region Stratifier"
++ Combine(HIC.patientGroups, ':')
++ Combine(HIC."HIV prevention intervention", ':')

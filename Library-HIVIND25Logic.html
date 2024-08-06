@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.1.16"}
-    h3,h4,h5,h6{--heading-prefix:"5.1.16"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.1.19"}
+    h3,h4,h5,h6{--heading-prefix:"5.1.19"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
 
       <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
@@ -315,7 +315,7 @@
         
           Draft
           
-            as of 2024-08-05
+            as of 2024-08-06
           
         
       </td>
@@ -425,11 +425,12 @@ using FHIR version '4.0.1'
 
 include HIVCommon version '0.0.1' called HIC
 include FHIRHelpers version '4.0.1'
-include FHIRCommon called FC
 include WHOCommon called WCom
+include HIVElements called HE
 
 // Indicator Definition
 parameter &quot;Measurement Period&quot; Interval&lt;Date&gt; default Interval[@2023-01-01, @2023-01-30]
+parameter &quot;Testing Interval&quot; System.Quantity default 3 months
 
 context Patient
 /* Populations */
@@ -448,8 +449,11 @@ define &quot;Initial Population&quot;:
  * Calculation: COUNT of clients with &quot;At elevated risk for HIV acquisition&quot;=True AND with a second &quot;HIV test date&quot; within fixed period after &quot;HIV test date&quot; in the reporting period with &quot;HIV test result&quot;='HIV-negative'
  */
 
+
+
+
 define &quot;Numerator&quot;:
-  true
+  exists(HIC.&quot;Negative Tests after First Negative Test&quot;)
 
 
 /**
@@ -460,12 +464,34 @@ define &quot;Numerator&quot;:
  */
 
 define &quot;Denominator&quot;:
-  true
+  exists(HIC.&quot;Negative Tests within Measurement Period&quot;)
     
 
 /* end Populations */
 
-</code></pre><p><code>No Content</code> (<code>application/elm+xml</code>)</p></div>
+
+/*
+ * Disaggregators
+ */
+
+define &quot;Administrative Gender Stratifier&quot;:
+	HIC.&quot;By Administrative Gender Stratifier&quot;
+
+define &quot;Age Stratifier&quot;:
+	HIC.&quot;By Age Stratifier 2&quot;
+
+define &quot;Geographic Region Stratifier&quot;:
+	HIC.&quot;By Geographic Region Stratifier&quot;
+
+define &quot;patientGroups Stratifier&quot;:
+	HIC.&quot;patientGroups&quot;
+
+define &quot;Stratification&quot;:
+ HIC.&quot;By Administrative Gender Stratifier&quot;.code 
+ + ':' + HIC.&quot;HIV status of partner or contact&quot;.code
+  + ':' + HIC.&quot;By Age Stratifier 2&quot;
++ ':' + HIC.&quot;By Geographic Region Stratifier&quot;
++ Combine(HIC.patientGroups, ':')</code></pre><p><code>No Content</code> (<code>application/elm+xml</code>)</p></div>
 
   <!-- insert notes if present -->
   
@@ -490,7 +516,7 @@ define &quot;Denominator&quot;:
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.hiv#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Aug 5, 2024 14:13+0000">2024-08-05</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.hiv#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 6, 2024 17:04+0000">2024-08-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
