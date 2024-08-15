@@ -30,7 +30,7 @@
   fhir:title [ fhir:v "WHO SMART Guidelines - HIV"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-08-15T19:00:48+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-15T19:04:43+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;
@@ -2432,7 +2432,7 @@
          fhir:link <http://smart.who.int/hiv/PlanDefinition/HIVB2DTDemo> ;
          fhir:reference [ fhir:v "PlanDefinition/HIVB2DTDemo" ]
        ] ;
-       fhir:name [ fhir:v "HIV.B2.DT Check for signs of serious illness" ] ;
+       fhir:name [ fhir:v "HIV.B2.DT Check for signs of serious illness Demo" ] ;
        fhir:description [ fhir:v "Check for signs of serious illness" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [

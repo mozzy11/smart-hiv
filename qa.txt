@@ -3,7 +3,7 @@ HIV : Validation Results
 
 err = 558, warn = 322, info = 2294
 IG Publisher Version: 1.6.20
-Generated Thu Aug 15 19:04:31 UTC 2024. FHIR version 4.0.1 for smart.who.int.hiv#0.2.0 (canonical = http://smart.who.int/hiv)
+Generated Thu Aug 15 19:08:24 UTC 2024. FHIR version 4.0.1 for smart.who.int.hiv#0.2.0 (canonical = http://smart.who.int/hiv)
  Build Errors : 57 / 4 / 0
  /github/workspace/fsh-generated/resources/ActivityDefinition-HIVB9DTScheduleFollowUp : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ActorDefinition-Client : 0 / 1 / 2

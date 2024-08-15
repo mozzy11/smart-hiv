@@ -16,7 +16,7 @@
   "title" : "WHO SMART Guidelines - HIV",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2024-08-15T19:00:48+00:00",
+  "date" : "2024-08-15T19:04:43+00:00",
   "publisher" : "WHO",
   "contact" : [{
     "name" : "WHO",
@@ -2540,7 +2540,7 @@
       "reference" : {
         "reference" : "PlanDefinition/HIVB2DTDemo"
       },
-      "name" : "HIV.B2.DT Check for signs of serious illness",
+      "name" : "HIV.B2.DT Check for signs of serious illness Demo",
       "description" : "Check for signs of serious illness",
       "exampleBoolean" : false
     },

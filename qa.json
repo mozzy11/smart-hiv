@@ -6,8 +6,8 @@
   "status" : "draft",
   "package-id" : "smart.who.int.hiv",
   "ig-ver" : "0.2.0",
-  "date" : "Thu, 15 Aug, 2024 19:00:48 +0000",
-  "dateISO8601" : "2024-08-15T19:00:48+00:00",
+  "date" : "Thu, 15 Aug, 2024 19:04:43 +0000",
+  "dateISO8601" : "2024-08-15T19:04:43+00:00",
   "errs" : 558,
   "warnings" : 322,
   "hints" : 2294,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 4182048616
+  "maxMemory" : 3408847048
 }
