@@ -1,6 +1,6 @@
 Instance: HIVB2DTDemo
 InstanceOf: http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition
-Title: "HIV.B2.DT Check for signs of serious illness"
+Title: "HIV.B2.DT Check for signs of serious illness Demo"
 Description: "Check for signs of serious illness"
 Usage: #definition
 * meta.profile[+] = "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableplandefinition"
