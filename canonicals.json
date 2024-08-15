@@ -147,6 +147,13 @@
     "name" : "HIVB2DTLogic"
   },
   {
+    "id" : "HIVB2DTLogicDemo",
+    "type" : "Library",
+    "url" : "http://smart.who.int/hiv/Library/HIVB2DTLogicDemo",
+    "version" : "0.2.0",
+    "name" : "HIVB2DTLogicDemo"
+  },
+  {
     "id" : "HIVB7DTLogic",
     "type" : "Library",
     "url" : "http://smart.who.int/hiv/Library/HIVB7DTLogic",
@@ -1468,6 +1475,13 @@
     "url" : "http://smart.who.int/hiv/PlanDefinition/HIVB2DT",
     "version" : "0.2.0",
     "name" : "HIVB2DT"
+  },
+  {
+    "id" : "HIVB2DTDemo",
+    "type" : "PlanDefinition",
+    "url" : "http://smart.who.int/hiv/PlanDefinition/HIVB2DTDemo",
+    "version" : "0.2.0",
+    "name" : "HIVB2DTDemo"
   },
   {
     "id" : "HIVB9DT",

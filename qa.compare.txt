@@ -1,7 +1,7 @@
 HIV : Validation Results
 =========================================
 
-err = 558, warn = 320, info = 2289
+err = 558, warn = 322, info = 2294
 $--
 Generated $--. FHIR version $-- for smart.who.int.hiv#$-- (canonical = http://smart.who.int/hiv)
  Build Errors : 57 / 4 / 0
@@ -22,6 +22,7 @@ Generated $--. FHIR version $-- for smart.who.int.hiv#$-- (canonical = http://sm
  /github/workspace/fsh-generated/resources/CodeSystem-HIVConcepts : 0 / 17 / 4
  /github/workspace/fsh-generated/resources/ImplementationGuide-smart.who.int.hiv : 0 / 0 / 4
  /github/workspace/fsh-generated/resources/Library-HIVB2DTLogic : 25 / 1538 / 11
+ /github/workspace/fsh-generated/resources/Library-HIVB2DTLogicDemo : 0 / 3 / 11
  /github/workspace/fsh-generated/resources/Library-HIVB7DTLogic : 0 / 26 / 11
  /github/workspace/fsh-generated/resources/Library-HIVB9DTLogic : 51 / 1538 / 11
  /github/workspace/fsh-generated/resources/Library-HIVCommon : 0 / 15 / 11
@@ -215,6 +216,7 @@ Generated $--. FHIR version $-- for smart.who.int.hiv#$-- (canonical = http://sm
  /github/workspace/fsh-generated/resources/Measure-HIVIND95 : 0 / 0 / 9
  /github/workspace/fsh-generated/resources/Measure-HIVIND96 : 0 / 0 / 9
  /github/workspace/fsh-generated/resources/PlanDefinition-HIVB2DT : 0 / 0 / 8
+ /github/workspace/fsh-generated/resources/PlanDefinition-HIVB2DTDemo : 0 / 0 / 8
  /github/workspace/fsh-generated/resources/PlanDefinition-HIVB9DT : 0 / 11 / 8
  /github/workspace/fsh-generated/resources/Questionnaire-HIV.A2GatherClientDetails : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/Questionnaire-HIV.A5CreateNewClientRecord : 0 / 0 / 6
@@ -718,6 +720,12 @@ INFORMATION: Library/HIVB2DTLogic: Library.extension[0]: This element does not m
 INFORMATION: Library/HIVB2DTLogic: Library.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Library/HIVB2DTLogic: Library.content[1]: Constraint failed: clb-2: 'CQL libraries must have a content element with data or a url (or both)'
 INFORMATION: Library/HIVB2DTLogic: Library.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/Library-HIVB2DTLogicDemo.json ==
+WARNING: /github/workspace/input/cql/HIVB2DTLogicDemo.cql: The function FHIRHelpers.ToInterval has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
+WARNING: /github/workspace/input/cql/HIVB2DTLogicDemo.cql: The function FHIRHelpers.ToString has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
+INFORMATION: Library/HIVB2DTLogicDemo: Library.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishablelibrary|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Library/HIVB2DTLogicDemo: Library.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cql/StructureDefinition/cql-library|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Library/HIVB2DTLogicDemo: Library.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cql/StructureDefinition/cql-module|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/Library-HIVB7DTLogic.json ==
 WARNING: /github/workspace/input/cql/HIVB7DTLogic.cql: The function FHIRHelpers.ToInterval has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
 WARNING: /github/workspace/input/cql/HIVB7DTLogic.cql: The function WHOCommon.references has multiple overloads and due to the SignatureLevel setting (None), the overload signature is not being included in the output. This may result in ambiguous function resolution at runtime, consider setting the SignatureLevel to Overloads or All to ensure that the output includes sufficient information to support correct overload selection at runtime.
@@ -2246,6 +2254,9 @@ INFORMATION: Resource: This resource could usefully have an OID assigned (OIDs a
 == fsh-generated/resources/PlanDefinition-HIVB2DT.json ==
 INFORMATION: PlanDefinition/HIVB2DT: PlanDefinition.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-draft (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: PlanDefinition/HIVB2DT: PlanDefinition.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableplandefinition|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated/resources/PlanDefinition-HIVB2DTDemo.json ==
+INFORMATION: PlanDefinition/HIVB2DTDemo: PlanDefinition.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-draft (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: PlanDefinition/HIVB2DTDemo: PlanDefinition.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableplandefinition|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 == fsh-generated/resources/PlanDefinition-HIVB9DT.json ==
 INFORMATION: PlanDefinition/HIVB9DT: PlanDefinition.extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/cpg/StructureDefinition/cpg-recommendationdefinition|2.0.0-draft (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: PlanDefinition/HIVB9DT: PlanDefinition.action[0].action[0].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided

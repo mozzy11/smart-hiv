@@ -30,7 +30,7 @@
   fhir:title [ fhir:v "WHO SMART Guidelines - HIV"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "true"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2024-08-15T18:29:29+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-08-15T19:00:48+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "WHO"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "WHO" ] ;
@@ -2426,6 +2426,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "PlanDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/hiv/PlanDefinition/HIVB2DTDemo> ;
+         fhir:reference [ fhir:v "PlanDefinition/HIVB2DTDemo" ]
+       ] ;
+       fhir:name [ fhir:v "HIV.B2.DT Check for signs of serious illness" ] ;
+       fhir:description [ fhir:v "Check for signs of serious illness" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Library" ]
        ] ) ;
        fhir:reference [
@@ -2433,6 +2445,18 @@
          fhir:reference [ fhir:v "Library/HIVB2DTLogic" ]
        ] ;
        fhir:name [ fhir:v "HIV.B2.DT Logic" ] ;
+       fhir:description [ fhir:v "HIV.B2.DT Signs of Serious Illness Logic" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Library" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://smart.who.int/hiv/Library/HIVB2DTLogicDemo> ;
+         fhir:reference [ fhir:v "Library/HIVB2DTLogicDemo" ]
+       ] ;
+       fhir:name [ fhir:v "HIV.B2.DT Logic Demo" ] ;
        fhir:description [ fhir:v "HIV.B2.DT Signs of Serious Illness Logic" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [

@@ -17,7 +17,7 @@
   <title value="WHO SMART Guidelines - HIV"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2024-08-15T18:29:29+00:00"/>
+  <date value="2024-08-15T19:00:48+00:00"/>
   <publisher value="WHO"/>
   <contact>
     <name value="WHO"/>
@@ -2176,12 +2176,34 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PlanDefinition"/>
+      </extension>
+      <reference>
+        <reference value="PlanDefinition/HIVB2DTDemo"/>
+      </reference>
+      <name value="HIV.B2.DT Check for signs of serious illness"/>
+      <description value="Check for signs of serious illness"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Library"/>
       </extension>
       <reference>
         <reference value="Library/HIVB2DTLogic"/>
       </reference>
       <name value="HIV.B2.DT Logic"/>
+      <description value="HIV.B2.DT Signs of Serious Illness Logic"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Library"/>
+      </extension>
+      <reference>
+        <reference value="Library/HIVB2DTLogicDemo"/>
+      </reference>
+      <name value="HIV.B2.DT Logic Demo"/>
       <description value="HIV.B2.DT Signs of Serious Illness Logic"/>
       <exampleBoolean value="false"/>
     </resource>
