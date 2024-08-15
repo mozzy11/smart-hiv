@@ -44,8 +44,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"5.1.8"}
-    h3,h4,h5,h6{--heading-prefix:"5.1.8"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.1.9"}
+    h3,h4,h5,h6{--heading-prefix:"5.1.9"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
 
       <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
@@ -302,7 +302,7 @@
         
           Draft
           
-            as of 2024-08-06
+            as of 2024-08-15
           
         
       </td>
@@ -392,6 +392,7 @@ include HIVCommon version '0.0.1' called HIC
 include FHIRHelpers version '4.0.1'
 include WHOCommon called WCom
 
+include HIVIndicatorElements called HIE
 // Indicator Definition
 parameter &amp;quot;Measurement Period&amp;quot; Interval&amp;lt;Date&amp;gt; default Interval[@2023-01-01, @2023-01-30]
 
@@ -413,7 +414,7 @@ define &amp;quot;Initial Population&amp;quot;:
  */
 
 define &amp;quot;Numerator&amp;quot;:
-  HIC.OAMT_retained
+  HIE.OAMT_retained
 
 
 /**
@@ -424,7 +425,7 @@ define &amp;quot;Numerator&amp;quot;:
  */
 
 define &amp;quot;Denominator&amp;quot;:
-  HIC.OAMT_initiated
+  HIE.OAMT_initiated
     
 
 /* end Populations */
@@ -434,35 +435,35 @@ define &amp;quot;Denominator&amp;quot;:
  */
 
 define &amp;quot;Administrative Gender Stratifier&amp;quot;:
-	HIC.&amp;quot;By Administrative Gender Stratifier&amp;quot;
+	HIE.&amp;quot;By Administrative Gender Stratifier&amp;quot;
 
 define &amp;quot;Age Stratifier&amp;quot;:
-	HIC.&amp;quot;By Age Stratifier 3&amp;quot;
+	HIE.&amp;quot;By Age Stratifier 3&amp;quot;
 
 define &amp;quot;Geographic Region Stratifier&amp;quot;:
-	HIC.&amp;quot;By Geographic Region Stratifier&amp;quot;
+	HIE.&amp;quot;By Geographic Region Stratifier&amp;quot;
 
 define &amp;quot;patientGroups Stratifier&amp;quot;:
-	HIC.&amp;quot;patientGroups&amp;quot;
+	HIE.&amp;quot;patientGroups&amp;quot;
 
 define &amp;quot;Setting&amp;quot;:
-    HIC.&amp;quot;setting&amp;quot;
+    HIE.&amp;quot;setting&amp;quot;
 
 //provider type not provided?
 
 define &amp;quot;Stratification&amp;quot;:
- HIC.&amp;quot;By Administrative Gender Stratifier&amp;quot;.code 
-  + ':' + HIC.&amp;quot;By Age Stratifier&amp;quot;
-+ ':' + HIC.&amp;quot;By Geographic Region Stratifier&amp;quot;
-+ Combine(HIC.patientGroups, ':')
-+ Combine(HIC.setting, ':')
+ HIE.&amp;quot;By Administrative Gender Stratifier&amp;quot;.code 
+  + ':' + HIE.&amp;quot;By Age Stratifier&amp;quot;
++ ':' + HIE.&amp;quot;By Geographic Region Stratifier&amp;quot;
++ Combine(HIE.patientGroups, ':')
++ Combine(HIE.setting, ':')
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;code&gt;No Content&lt;/code&gt; (&lt;code&gt;application/elm+xml&lt;/code&gt;)&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/text&gt;
   &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.extension">extension</a>
              <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability&quot;&gt;
     &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;computable&quot;/&gt;
   &lt;/extension&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://smart.who.int/HIV/Library/HIVIND13Logic&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://smart.who.int/hiv/Library/HIVIND13Logic&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.2.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HIVIND13Logic&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;HIV.IND.13 Logic&quot;/&gt;
@@ -474,7 +475,7 @@ define &amp;quot;Stratification&amp;quot;:
       &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;logic-library&quot;/&gt;
     &lt;/coding&gt;
   &lt;/type&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2024-08-06T17:04:54+00:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2024-08-15T18:29:29+00:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;WHO&quot;/&gt;
@@ -488,7 +489,7 @@ define &amp;quot;Stratification&amp;quot;:
   &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.content">content</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;text/cql&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.data">data</a>
-          <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">value</a>=&quot;LyoqCiAqIExpYnJhcnk6IEhJVi5JTkQuMTMgTG9naWMKICogUmVmIE5vOiBQUlYuMTMKICogU2hvcnQgTmFtZTogT0FNVCBtaW5pbXVtIGR1cmF0aW9uCiAqCiAqIERlZmluaXRpb246ICUgb2YgT0FNVCByZWNpcGllbnRzIHdobyByZWNlaXZlZCB0cmVhdG1lbnQgZm9yIGF0IGxlYXN0IHNpeCBtb250aHMKICoKICogTnVtZXJhdG9yOiBOdW1iZXIgb2YgcGVvcGxlIGluIGNvaG9ydCByZXRhaW5lZCBpbiBPQU1UIGZvciBhdCBsZWFzdCBzaXggbW9udGhzCiAqIE51bWVyYXRvciBDYWxjdWxhdGlvbjogQ09VTlQgb2YgY2xpZW50cyB3aXRoaW4gY29ob3J0ICJSZXRhaW5lZCBvbiBPQU1UIj1UcnVlIDYgbW9udGhzIGFmdGVyICJEYXRlIE9BTVQgaW5pdGlhdGVkIgogKiBOdW1lcmF0b3IgRXhjbHVzaW9uczogCiAqCiAqIERlbm9taW5hdG9yOiBOdW1iZXIgb2YgcGVvcGxlIHN0YXJ0aW5nIE9BTVQgZHVyaW5nIGRlZmluZWQgY29ob3J0IHJlY3J1aXRtZW50IHBlcmlvZAogKiBEZW5vbWluYXRvciBDYWxjdWxhdGlvbjogQ09VTlQgb2YgY2xpZW50cyB3aXRoaW4gY29ob3J0IHdpdGggIkRhdGUgT0FNVCBpbml0aWF0ZWQiIGluIGNvaG9ydCByZWNydWl0bWVudCBwZXJpb2QKICogRGVub21pbmF0b3IgRXhjbHVzaW9uczogCiAqCiAqIERpc2FnZ3JlZ2F0aW9uczoKICog4oCiIEdlbmRlciAoZmVtYWxlLCBtYWxlLCBvdGhlciopIAogKiAg4oCiIEFnZSAoMTXigJMxOSwgMjDigJMyNCwgMjXigJM0OSwgNTArIHllYXJzKSAKICogIOKAoiBQcm92aWRlciB0eXBlIChrZXkgcG9wdWxhdGlvbi1sZWQgb3IgY29tbXVuaXR5LWxlZCBvcmdhbml6YXRpb24sIHB1YmxpYyBzZWN0b3IgcHJvdmlkZXIsIG90aGVyIGVudGl0aWVzIHN1Y2ggYXMgcHJpdmF0ZSBmb3ItcHJvZml0IGFuZCBub3QtZm9yLXByb2ZpdCBvcmdhbml6YXRpb25zLCBpbmNsdWRpbmcgZmFpdGgtYmFzZWQsIGludGVybmF0aW9uYWwsIG5vbmdvdmVybm1lbnRhbCkgCiAqICDigKIgU2V0dGluZzogZmFjaWxpdHktYmFzZWQgc2VydmljZSAoaW5jbHVkaW5nIGhvc3BpdGFscywgaGVhbHRoIGNsaW5pY3MsIGdlbmVyYWwgcHJhY3RpY2Ugb2ZmaWNlcywgZXRjLikgb3IgY29tbXVuaXR5LWJhc2VkIHNlcnZpY2UgKGluY2x1ZGluZyBkcm9wLWluIGNlbnRyZXMsIGNvbW11bml0eSBzZXJ2aWNlIGRlbGl2ZXJ5IHBvaW50cywgbW9iaWxlIGNsaW5pY3Mgb3IgdmFucywgb3V0cmVhY2ggdGVhbXMsIGNvbW11bml0eSBzdXBwb3J0IGdyb3VwcywgZXRjLikgCiAqICDigKLCoENpdGllcyBhbmQgb3RoZXIgYWRtaW5pc3RyYXRpdmUgcmVnaW9ucyBvZiBlcGlkZW1pb2xvZ2ljIGltcG9ydGFuY2UKICoKICogRGlzYWdncmVnYXRpb24gRWxlbWVudHM6IEdlbmRlciB8IEFnZQogKgogKiBOdW1lcmF0b3IgYW5kIERlbm9taW5hdG9yIEVsZW1lbnRzOgogKiBEYXRlIE9BTVQgaW5pdGlhdGVkIAogKiAgUmV0YWluZWQgb24gT0FNVAogKgogKiBSZWZlcmVuY2U6IENvbnNvbGlkYXRlZCBndWlkZWxpbmVzIG9uIHBlcnNvbi1jZW50cmVkIEhJViBzdHJhdGVnaWMgaW5mb3JtYXRpb246IHN0cmVuZ3RoZW5pbmcgcm91dGluZSBkYXRhIGZvciBpbXBhY3QuIEdlbmV2YTogV29ybGQgSGVhbHRoIE9yZ2FuaXphdGlvbjsgMjAyMgogKiAKICogRGF0YSBDb25jZXB0czoKICogSElWLkEuREUxNzogQWdlIHwgQ2FsY3VsYXRlZCBhZ2UgKG51bWJlciBvZiB5ZWFycykgb2YgdGhlIGNsaWVudCBiYXNlZCBvbiBkYXRlIG9mIGJpcnRoCiAqIEhJVi5BLkRFMTg6IEdlbmRlciogfCBHZW5kZXIgb2YgdGhlIGNsaWVudCoKICogSElWLkEuREUxOTogRmVtYWxlIHwgQ2xpZW50IGlkZW50aWZpZXMgYXMgZmVtYWxlCiAqIEhJVi5BLkRFMjA6IE1hbGUgfCBDbGllbnQgaWRlbnRpZmllcyBhcyBtYWxlCiAqIEhJVi5BLkRFMjE6IFRyYW5zZ2VuZGVyIG1hbGUgfCBDbGllbnQgaWRlbnRpZmllcyBhcyB0cmFuc2dlbmRlciBtYWxlCiAqIEhJVi5BLkRFMjI6IFRyYW5zZ2VuZGVyIGZlbWFsZSB8IENsaWVudCBpZGVudGlmaWVzIGFzIHRyYW5zZ2VuZGVyIGZlbWFsZQogKiBISVYuQS5ERTIzOiBPdGhlciB8IEFkZGl0aW9uYWwgY2F0ZWdvcnkKICogSElWLlBSVi5ERTE3OiBEYXRlIE9BTVQgaW5pdGlhdGVkIHwgRGF0ZSBjbGllbnQgaW5pdGlhdGVkIG9waW9pZCBhZ29uaXN0IG1haW50ZW5hbmNlIHRyZWF0bWVudCAoT0FNVCkKICogSElWLlBSVi5ERTIxOiBSZXRhaW5lZCBvbiBPQU1UIHwgQ2xpZW50IGlzIHJldGFpbmVkIG9uIG9waW9pZCBhZ29uaXN0IG1haW50ZW5hbmNlIHRyZWF0bWVudCAoT0FNVCkgYXQgcmVwb3J0aW5nIGRhdGUsIGRlZmluZWQgYWNjb3JkaW5nIHRvIGNvdW50cnkvcHJvZ3JhbSB0byBhY2NvdW50IGZvciBtZWRpY2F0aW9uIGRpc3BlbnNlZCBhbmQgTFRGVSBjcml0ZXJpb24KICoKICogQWRkaXRpb25hbCBDb250ZXh0CiAqIC0gd2hhdCBpdCBtZWFzdXJlczogVGhpcyBpbmRpY2F0b3IgdXNlcyBhIGNvaG9ydCBhbmFseXNpcyB0byBtZWFzdXJlIHRoZSBwcm9wb3J0aW9uIG9mIE9BTVQgcmVjaXBpZW50cyByZXRhaW5lZCBvbiB0cmVhdG1lbnQgZm9yIGF0IGxlYXN0IHNpeCBtb250aHMgYW5kIGlzIGEgbWVhc3VyZSBvZiBob3cgT0FNVCBpcyBwcmVzY3JpYmVkIGFuZCBvZiByZXRlbnRpb24gaW4gdGhlIE9BTVQgcHJvZ3JhbW1lLgogKiAtIHJhdGlvbmFsZTogRXZpZGVuY2UgZGVtb25zdHJhdGVzIHRoYXQgbWF4aW11bSBiZW5lZml0IGZyb20gT0FNVCBpcyBnYWluZWQgd2hlbiB0cmVhdG1lbnQgbGFzdHMgYXQgbGVhc3Qgc2l4IG1vbnRocy4KICogLSBtZXRob2Q6IEluZGl2aWR1YWwtbGV2ZWwgZGF0YSBvYnRhaW5lZCBmcm9tIHByb2dyYW1tZSByZWNvcmRzCiAqIAogKiBTdWdnZXN0ZWQgU2NvcmluZyBNZXRob2Q6IHByb3BvcnRpb24gfCBodHRwOi8vaGw3Lm9yZy9maGlyL3VzL2NxZm1lYXN1cmVzL1N0cnVjdHVyZURlZmluaXRpb24vcHJvcG9ydGlvbi1tZWFzdXJlLWNxZm0KICovCgpsaWJyYXJ5IEhJVklORDEzTG9naWMKCi8vIEluY2x1ZGVkIExpYnJhcmllcwp1c2luZyBGSElSIHZlcnNpb24gJzQuMC4xJwoKaW5jbHVkZSBISVZDb21tb24gdmVyc2lvbiAnMC4wLjEnIGNhbGxlZCBISUMKaW5jbHVkZSBGSElSSGVscGVycyB2ZXJzaW9uICc0LjAuMScKaW5jbHVkZSBXSE9Db21tb24gY2FsbGVkIFdDb20KCi8vIEluZGljYXRvciBEZWZpbml0aW9uCnBhcmFtZXRlciAiTWVhc3VyZW1lbnQgUGVyaW9kIiBJbnRlcnZhbDxEYXRlPiBkZWZhdWx0IEludGVydmFsW0AyMDIzLTAxLTAxLCBAMjAyMy0wMS0zMF0KCmNvbnRleHQgUGF0aWVudAovKiBQb3B1bGF0aW9ucyAqLwoKLyoKICpJbml0aWFsIFBvcHVsYXRpb24KICovCgpkZWZpbmUgIkluaXRpYWwgUG9wdWxhdGlvbiI6CiAgdHJ1ZQoKLyoqCiAqIE51bWVyYXRvcgogKiAKICogRGVmaW5pdGlvbjogTnVtYmVyIG9mIHBlb3BsZSBpbiBjb2hvcnQgcmV0YWluZWQgaW4gT0FNVCBmb3IgYXQgbGVhc3Qgc2l4IG1vbnRocwogKiBDYWxjdWxhdGlvbjogQ09VTlQgb2YgY2xpZW50cyB3aXRoaW4gY29ob3J0ICJSZXRhaW5lZCBvbiBPQU1UIj1UcnVlIDYgbW9udGhzIGFmdGVyICJEYXRlIE9BTVQgaW5pdGlhdGVkIgogKi8KCmRlZmluZSAiTnVtZXJhdG9yIjoKICBISUMuT0FNVF9yZXRhaW5lZAoKCi8qKgogKiBEZW5vbWluYXRvcgogKgogKiBEZWZpbml0aW9uOiBOdW1iZXIgb2YgcGVvcGxlIHN0YXJ0aW5nIE9BTVQgZHVyaW5nIGRlZmluZWQgY29ob3J0IHJlY3J1aXRtZW50IHBlcmlvZAogKiBDYWxjdWxhdGlvbjogQ09VTlQgb2YgY2xpZW50cyB3aXRoaW4gY29ob3J0IHdpdGggIkRhdGUgT0FNVCBpbml0aWF0ZWQiIGluIGNvaG9ydCByZWNydWl0bWVudCBwZXJpb2QKICovCgpkZWZpbmUgIkRlbm9taW5hdG9yIjoKICBISUMuT0FNVF9pbml0aWF0ZWQKICAgIAoKLyogZW5kIFBvcHVsYXRpb25zICovCgovKgogKiBEaXNhZ2dyZWdhdG9ycwogKi8KCmRlZmluZSAiQWRtaW5pc3RyYXRpdmUgR2VuZGVyIFN0cmF0aWZpZXIiOgoJSElDLiJCeSBBZG1pbmlzdHJhdGl2ZSBHZW5kZXIgU3RyYXRpZmllciIKCmRlZmluZSAiQWdlIFN0cmF0aWZpZXIiOgoJSElDLiJCeSBBZ2UgU3RyYXRpZmllciAzIgoKZGVmaW5lICJHZW9ncmFwaGljIFJlZ2lvbiBTdHJhdGlmaWVyIjoKCUhJQy4iQnkgR2VvZ3JhcGhpYyBSZWdpb24gU3RyYXRpZmllciIKCmRlZmluZSAicGF0aWVudEdyb3VwcyBTdHJhdGlmaWVyIjoKCUhJQy4icGF0aWVudEdyb3VwcyIKCmRlZmluZSAiU2V0dGluZyI6CiAgICBISUMuInNldHRpbmciCgovL3Byb3ZpZGVyIHR5cGUgbm90IHByb3ZpZGVkPwoKZGVmaW5lICJTdHJhdGlmaWNhdGlvbiI6CiBISUMuIkJ5IEFkbWluaXN0cmF0aXZlIEdlbmRlciBTdHJhdGlmaWVyIi5jb2RlIAogICsgJzonICsgSElDLiJCeSBBZ2UgU3RyYXRpZmllciIKKyAnOicgKyBISUMuIkJ5IEdlb2dyYXBoaWMgUmVnaW9uIFN0cmF0aWZpZXIiCisgQ29tYmluZShISUMucGF0aWVudEdyb3VwcywgJzonKQorIENvbWJpbmUoSElDLnNldHRpbmcsICc6JykK&quot;/&gt;
+          <a href="http://hl7.org/fhir/R4/datatypes.html#base64Binary">value</a>=&quot;LyoqCiAqIExpYnJhcnk6IEhJVi5JTkQuMTMgTG9naWMKICogUmVmIE5vOiBQUlYuMTMKICogU2hvcnQgTmFtZTogT0FNVCBtaW5pbXVtIGR1cmF0aW9uCiAqCiAqIERlZmluaXRpb246ICUgb2YgT0FNVCByZWNpcGllbnRzIHdobyByZWNlaXZlZCB0cmVhdG1lbnQgZm9yIGF0IGxlYXN0IHNpeCBtb250aHMKICoKICogTnVtZXJhdG9yOiBOdW1iZXIgb2YgcGVvcGxlIGluIGNvaG9ydCByZXRhaW5lZCBpbiBPQU1UIGZvciBhdCBsZWFzdCBzaXggbW9udGhzCiAqIE51bWVyYXRvciBDYWxjdWxhdGlvbjogQ09VTlQgb2YgY2xpZW50cyB3aXRoaW4gY29ob3J0ICJSZXRhaW5lZCBvbiBPQU1UIj1UcnVlIDYgbW9udGhzIGFmdGVyICJEYXRlIE9BTVQgaW5pdGlhdGVkIgogKiBOdW1lcmF0b3IgRXhjbHVzaW9uczogCiAqCiAqIERlbm9taW5hdG9yOiBOdW1iZXIgb2YgcGVvcGxlIHN0YXJ0aW5nIE9BTVQgZHVyaW5nIGRlZmluZWQgY29ob3J0IHJlY3J1aXRtZW50IHBlcmlvZAogKiBEZW5vbWluYXRvciBDYWxjdWxhdGlvbjogQ09VTlQgb2YgY2xpZW50cyB3aXRoaW4gY29ob3J0IHdpdGggIkRhdGUgT0FNVCBpbml0aWF0ZWQiIGluIGNvaG9ydCByZWNydWl0bWVudCBwZXJpb2QKICogRGVub21pbmF0b3IgRXhjbHVzaW9uczogCiAqCiAqIERpc2FnZ3JlZ2F0aW9uczoKICog4oCiIEdlbmRlciAoZmVtYWxlLCBtYWxlLCBvdGhlciopIAogKiAg4oCiIEFnZSAoMTXigJMxOSwgMjDigJMyNCwgMjXigJM0OSwgNTArIHllYXJzKSAKICogIOKAoiBQcm92aWRlciB0eXBlIChrZXkgcG9wdWxhdGlvbi1sZWQgb3IgY29tbXVuaXR5LWxlZCBvcmdhbml6YXRpb24sIHB1YmxpYyBzZWN0b3IgcHJvdmlkZXIsIG90aGVyIGVudGl0aWVzIHN1Y2ggYXMgcHJpdmF0ZSBmb3ItcHJvZml0IGFuZCBub3QtZm9yLXByb2ZpdCBvcmdhbml6YXRpb25zLCBpbmNsdWRpbmcgZmFpdGgtYmFzZWQsIGludGVybmF0aW9uYWwsIG5vbmdvdmVybm1lbnRhbCkgCiAqICDigKIgU2V0dGluZzogZmFjaWxpdHktYmFzZWQgc2VydmljZSAoaW5jbHVkaW5nIGhvc3BpdGFscywgaGVhbHRoIGNsaW5pY3MsIGdlbmVyYWwgcHJhY3RpY2Ugb2ZmaWNlcywgZXRjLikgb3IgY29tbXVuaXR5LWJhc2VkIHNlcnZpY2UgKGluY2x1ZGluZyBkcm9wLWluIGNlbnRyZXMsIGNvbW11bml0eSBzZXJ2aWNlIGRlbGl2ZXJ5IHBvaW50cywgbW9iaWxlIGNsaW5pY3Mgb3IgdmFucywgb3V0cmVhY2ggdGVhbXMsIGNvbW11bml0eSBzdXBwb3J0IGdyb3VwcywgZXRjLikgCiAqICDigKLCoENpdGllcyBhbmQgb3RoZXIgYWRtaW5pc3RyYXRpdmUgcmVnaW9ucyBvZiBlcGlkZW1pb2xvZ2ljIGltcG9ydGFuY2UKICoKICogRGlzYWdncmVnYXRpb24gRWxlbWVudHM6IEdlbmRlciB8IEFnZQogKgogKiBOdW1lcmF0b3IgYW5kIERlbm9taW5hdG9yIEVsZW1lbnRzOgogKiBEYXRlIE9BTVQgaW5pdGlhdGVkIAogKiAgUmV0YWluZWQgb24gT0FNVAogKgogKiBSZWZlcmVuY2U6IENvbnNvbGlkYXRlZCBndWlkZWxpbmVzIG9uIHBlcnNvbi1jZW50cmVkIEhJViBzdHJhdGVnaWMgaW5mb3JtYXRpb246IHN0cmVuZ3RoZW5pbmcgcm91dGluZSBkYXRhIGZvciBpbXBhY3QuIEdlbmV2YTogV29ybGQgSGVhbHRoIE9yZ2FuaXphdGlvbjsgMjAyMgogKiAKICogRGF0YSBDb25jZXB0czoKICogSElWLkEuREUxNzogQWdlIHwgQ2FsY3VsYXRlZCBhZ2UgKG51bWJlciBvZiB5ZWFycykgb2YgdGhlIGNsaWVudCBiYXNlZCBvbiBkYXRlIG9mIGJpcnRoCiAqIEhJVi5BLkRFMTg6IEdlbmRlciogfCBHZW5kZXIgb2YgdGhlIGNsaWVudCoKICogSElWLkEuREUxOTogRmVtYWxlIHwgQ2xpZW50IGlkZW50aWZpZXMgYXMgZmVtYWxlCiAqIEhJVi5BLkRFMjA6IE1hbGUgfCBDbGllbnQgaWRlbnRpZmllcyBhcyBtYWxlCiAqIEhJVi5BLkRFMjE6IFRyYW5zZ2VuZGVyIG1hbGUgfCBDbGllbnQgaWRlbnRpZmllcyBhcyB0cmFuc2dlbmRlciBtYWxlCiAqIEhJVi5BLkRFMjI6IFRyYW5zZ2VuZGVyIGZlbWFsZSB8IENsaWVudCBpZGVudGlmaWVzIGFzIHRyYW5zZ2VuZGVyIGZlbWFsZQogKiBISVYuQS5ERTIzOiBPdGhlciB8IEFkZGl0aW9uYWwgY2F0ZWdvcnkKICogSElWLlBSVi5ERTE3OiBEYXRlIE9BTVQgaW5pdGlhdGVkIHwgRGF0ZSBjbGllbnQgaW5pdGlhdGVkIG9waW9pZCBhZ29uaXN0IG1haW50ZW5hbmNlIHRyZWF0bWVudCAoT0FNVCkKICogSElWLlBSVi5ERTIxOiBSZXRhaW5lZCBvbiBPQU1UIHwgQ2xpZW50IGlzIHJldGFpbmVkIG9uIG9waW9pZCBhZ29uaXN0IG1haW50ZW5hbmNlIHRyZWF0bWVudCAoT0FNVCkgYXQgcmVwb3J0aW5nIGRhdGUsIGRlZmluZWQgYWNjb3JkaW5nIHRvIGNvdW50cnkvcHJvZ3JhbSB0byBhY2NvdW50IGZvciBtZWRpY2F0aW9uIGRpc3BlbnNlZCBhbmQgTFRGVSBjcml0ZXJpb24KICoKICogQWRkaXRpb25hbCBDb250ZXh0CiAqIC0gd2hhdCBpdCBtZWFzdXJlczogVGhpcyBpbmRpY2F0b3IgdXNlcyBhIGNvaG9ydCBhbmFseXNpcyB0byBtZWFzdXJlIHRoZSBwcm9wb3J0aW9uIG9mIE9BTVQgcmVjaXBpZW50cyByZXRhaW5lZCBvbiB0cmVhdG1lbnQgZm9yIGF0IGxlYXN0IHNpeCBtb250aHMgYW5kIGlzIGEgbWVhc3VyZSBvZiBob3cgT0FNVCBpcyBwcmVzY3JpYmVkIGFuZCBvZiByZXRlbnRpb24gaW4gdGhlIE9BTVQgcHJvZ3JhbW1lLgogKiAtIHJhdGlvbmFsZTogRXZpZGVuY2UgZGVtb25zdHJhdGVzIHRoYXQgbWF4aW11bSBiZW5lZml0IGZyb20gT0FNVCBpcyBnYWluZWQgd2hlbiB0cmVhdG1lbnQgbGFzdHMgYXQgbGVhc3Qgc2l4IG1vbnRocy4KICogLSBtZXRob2Q6IEluZGl2aWR1YWwtbGV2ZWwgZGF0YSBvYnRhaW5lZCBmcm9tIHByb2dyYW1tZSByZWNvcmRzCiAqIAogKiBTdWdnZXN0ZWQgU2NvcmluZyBNZXRob2Q6IHByb3BvcnRpb24gfCBodHRwOi8vaGw3Lm9yZy9maGlyL3VzL2NxZm1lYXN1cmVzL1N0cnVjdHVyZURlZmluaXRpb24vcHJvcG9ydGlvbi1tZWFzdXJlLWNxZm0KICovCgpsaWJyYXJ5IEhJVklORDEzTG9naWMKCi8vIEluY2x1ZGVkIExpYnJhcmllcwp1c2luZyBGSElSIHZlcnNpb24gJzQuMC4xJwoKaW5jbHVkZSBISVZDb21tb24gdmVyc2lvbiAnMC4wLjEnIGNhbGxlZCBISUMKaW5jbHVkZSBGSElSSGVscGVycyB2ZXJzaW9uICc0LjAuMScKaW5jbHVkZSBXSE9Db21tb24gY2FsbGVkIFdDb20KCmluY2x1ZGUgSElWSW5kaWNhdG9yRWxlbWVudHMgY2FsbGVkIEhJRQovLyBJbmRpY2F0b3IgRGVmaW5pdGlvbgpwYXJhbWV0ZXIgIk1lYXN1cmVtZW50IFBlcmlvZCIgSW50ZXJ2YWw8RGF0ZT4gZGVmYXVsdCBJbnRlcnZhbFtAMjAyMy0wMS0wMSwgQDIwMjMtMDEtMzBdCgpjb250ZXh0IFBhdGllbnQKLyogUG9wdWxhdGlvbnMgKi8KCi8qCiAqSW5pdGlhbCBQb3B1bGF0aW9uCiAqLwoKZGVmaW5lICJJbml0aWFsIFBvcHVsYXRpb24iOgogIHRydWUKCi8qKgogKiBOdW1lcmF0b3IKICogCiAqIERlZmluaXRpb246IE51bWJlciBvZiBwZW9wbGUgaW4gY29ob3J0IHJldGFpbmVkIGluIE9BTVQgZm9yIGF0IGxlYXN0IHNpeCBtb250aHMKICogQ2FsY3VsYXRpb246IENPVU5UIG9mIGNsaWVudHMgd2l0aGluIGNvaG9ydCAiUmV0YWluZWQgb24gT0FNVCI9VHJ1ZSA2IG1vbnRocyBhZnRlciAiRGF0ZSBPQU1UIGluaXRpYXRlZCIKICovCgpkZWZpbmUgIk51bWVyYXRvciI6CiAgSElFLk9BTVRfcmV0YWluZWQKCgovKioKICogRGVub21pbmF0b3IKICoKICogRGVmaW5pdGlvbjogTnVtYmVyIG9mIHBlb3BsZSBzdGFydGluZyBPQU1UIGR1cmluZyBkZWZpbmVkIGNvaG9ydCByZWNydWl0bWVudCBwZXJpb2QKICogQ2FsY3VsYXRpb246IENPVU5UIG9mIGNsaWVudHMgd2l0aGluIGNvaG9ydCB3aXRoICJEYXRlIE9BTVQgaW5pdGlhdGVkIiBpbiBjb2hvcnQgcmVjcnVpdG1lbnQgcGVyaW9kCiAqLwoKZGVmaW5lICJEZW5vbWluYXRvciI6CiAgSElFLk9BTVRfaW5pdGlhdGVkCiAgICAKCi8qIGVuZCBQb3B1bGF0aW9ucyAqLwoKLyoKICogRGlzYWdncmVnYXRvcnMKICovCgpkZWZpbmUgIkFkbWluaXN0cmF0aXZlIEdlbmRlciBTdHJhdGlmaWVyIjoKCUhJRS4iQnkgQWRtaW5pc3RyYXRpdmUgR2VuZGVyIFN0cmF0aWZpZXIiCgpkZWZpbmUgIkFnZSBTdHJhdGlmaWVyIjoKCUhJRS4iQnkgQWdlIFN0cmF0aWZpZXIgMyIKCmRlZmluZSAiR2VvZ3JhcGhpYyBSZWdpb24gU3RyYXRpZmllciI6CglISUUuIkJ5IEdlb2dyYXBoaWMgUmVnaW9uIFN0cmF0aWZpZXIiCgpkZWZpbmUgInBhdGllbnRHcm91cHMgU3RyYXRpZmllciI6CglISUUuInBhdGllbnRHcm91cHMiCgpkZWZpbmUgIlNldHRpbmciOgogICAgSElFLiJzZXR0aW5nIgoKLy9wcm92aWRlciB0eXBlIG5vdCBwcm92aWRlZD8KCmRlZmluZSAiU3RyYXRpZmljYXRpb24iOgogSElFLiJCeSBBZG1pbmlzdHJhdGl2ZSBHZW5kZXIgU3RyYXRpZmllciIuY29kZSAKICArICc6JyArIEhJRS4iQnkgQWdlIFN0cmF0aWZpZXIiCisgJzonICsgSElFLiJCeSBHZW9ncmFwaGljIFJlZ2lvbiBTdHJhdGlmaWVyIgorIENvbWJpbmUoSElFLnBhdGllbnRHcm91cHMsICc6JykKKyBDb21iaW5lKEhJRS5zZXR0aW5nLCAnOicpCg==&quot;/&gt;
   &lt;/content&gt;
   &lt;<a href="http://hl7.org/fhir/R4/library.html#Library.content">content</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Attachment#Attachment.contentType">contentType</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;application/elm+xml&quot;/&gt;
@@ -517,7 +518,7 @@ define &amp;quot;Stratification&amp;quot;:
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.hiv#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Aug 6, 2024 17:04+0000">2024-08-06</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.hiv#0.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 15, 2024 18:29+0000">2024-08-15</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

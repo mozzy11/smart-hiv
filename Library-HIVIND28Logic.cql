@@ -96,19 +96,19 @@ define "Initial Population":
 define "numerator":
 //MINUS | COUNT of clients with "HIV status"='HIV-positive' AND "On ART"=True on the reporting period end date
    (
-    HIE."Death documented"
-   or HIE."Transferred out"
-   or HIE."Lost to follow-up"
+    HIE."Has death documented"
+   or HIE."Has transferred out"
+   or HIE."Is lost to follow-up"
    )
    and (((
     //saying needs to not be counted this measurement period but should have counted this period or last period
-    HIE."HIV-positive B.DE116"
+   HIE."Has HIV-positive Status"
    and HIE."On ART H.DE47"
    )
    ) or
    (
     //Accounts for end of last period
-    exists(HE."HIV-positive B.DE116" HIV where HIV starts before (end of "Measurement Period" - duration in days of "Measurement Period"))
+    HIE."Has HIV-positive Status at last measurment period"
    and exists(HE."On ART H.DE47" ART
    where ART.effective starts before (end of "Measurement Period" - duration in days of "Measurement Period")
     and ART.effective ends after (start of "Measurement Period" - duration in days of "Measurement Period")
@@ -121,13 +121,13 @@ define "numerator":
  define "denominator":
    (((
     //saying needs to not be counted this measurement period but should have counted this period or last period
-    HIE."HIV-positive B.DE116"
+   HIE."Has HIV-positive Status"
    and HIE."On ART H.DE47"
    )
    ) or
    (
     //Accounts for end of last period
-    exists(HE."HIV-positive B.DE116" HIV where HIV starts before (end of "Measurement Period" - duration in days of "Measurement Period"))
+    HIE."Has HIV-positive Status at last measurment period"
    and exists(HE."On ART H.DE47" ART
    where ART.effective starts before (end of "Measurement Period" - duration in days of "Measurement Period")
     and ART.effective ends after (start of "Measurement Period" - duration in days of "Measurement Period")
@@ -142,23 +142,23 @@ define "numerator":
  */
 
 define "Administrative Gender Stratifier":
-	HIC."By Administrative Gender Stratifier"
+	HIE."By Administrative Gender Stratifier"
 
 define "Age Stratifier":
-	HIC."By Age Stratifier"
+	HIE."By Age Stratifier"
 
 define "Geographic Region Stratifier":
-	HIC."By Geographic Region Stratifier"
+	HIE."By Geographic Region Stratifier"
 
 define "patientGroups Stratifier":
-	HIC."patientGroups"
+	HIE."patientGroups"
 
 define "Treatment outcome category Stratifier":
-	HIC."Treatment outcome category"
+	HIE."Treatment outcome category"
 
 define "Stratification":
- HIC."By Administrative Gender Stratifier".code 
-  + ':' + HIC."By Age Stratifier"
-+ ':' + HIC."By Geographic Region Stratifier"
-+ Combine(HIC.patientGroups, ':')
-+ Combine(HIC."Treatment outcome category", ':')
+ HIE."By Administrative Gender Stratifier".code 
+  + ':' + HIE."By Age Stratifier"
++ ':' + HIE."By Geographic Region Stratifier"
++ Combine(HIE.patientGroups, ':')
++ Combine(HIE."Treatment outcome category", ':')

@@ -108,14 +108,14 @@ define "Initial Population":
  */
 
 define "Numerator":
-  HIE."HIV-positive B.DE116"
+  HIE."Has HIV-positive Status"
   and HIE."On ART H.DE47"
   and 
-   (months between (end of "Measurement Period") and (date from start of HIC."First On ART".effective.toInterval()) > 6 months)
+   (months between (end of "Measurement Period") and (date from start of HE."First On ART".effective.toInterval()) > 6 months)
    and 
    exists(
     HE."Date viral load test results received by client D.DE193" VL
-    with HIC."routine viral load sample collection" P 
+    with HE."routine viral load sample collection" P 
     such that VL.partOf.references(P)
     where VL.issued.toInterval() during "Measurement Period"
     )
@@ -127,9 +127,9 @@ define "Numerator":
  */
     
 define "Numerator Exclusions":
-  HIE."Death documented"
-   and HIE."Transferred out"
-   and HIE."Lost to follow-up"
+  HIE."Has death documented"
+   or HIE."Has transferred out"
+   or HIE."Is lost to follow-up"
 
 /**
  * Denominator
@@ -139,10 +139,10 @@ define "Numerator Exclusions":
  */
 
 define "Denominator":
-  HIE."HIV-positive B.DE116"
+ HIE."Has HIV-positive Status"
   and HIE."On ART H.DE47"
   and 
-   (months between (end of "Measurement Period") and (date from start of HIC."First On ART".effective.toInterval()) > 6 months)
+   (months between (end of "Measurement Period") and (date from start of HE."First On ART".effective.toInterval()) > 6 months)
     
 /**
 * Denominator Exclusions
@@ -151,9 +151,9 @@ define "Denominator":
 */
 
 define "Denominator Exclusions":
-  HIE."Death documented"
-   and HIE."Transferred out"
-   and HIE."Lost to follow-up"
+  HIE."Has death documented"
+   and HIE."Has transferred out"
+   and HIE."Is lost to follow-up"
 
 /* end Populations */
 
@@ -162,19 +162,19 @@ define "Denominator Exclusions":
  */
 
 define "Administrative Gender Stratifier":
-	HIC."By Administrative Gender Stratifier"
+	HIE."By Administrative Gender Stratifier"
 
 define "Age Stratifier":
-	HIC."By Age Stratifier"
+	HIE."By Age Stratifier"
 
 define "Geographic Region Stratifier":
-	HIC."By Geographic Region Stratifier"
+	HIE."By Geographic Region Stratifier"
 
 define "patientGroups Stratifier":
-	HIC."patientGroups"
+	HIE."patientGroups"
 
 define "Stratification":
- HIC."By Administrative Gender Stratifier".code 
-  + ':' + HIC."By Age Stratifier"
-+ ':' + HIC."By Geographic Region Stratifier"
-+ Combine(HIC.patientGroups, ':')
+ HIE."By Administrative Gender Stratifier".code 
+  + ':' + HIE."By Age Stratifier"
++ ':' + HIE."By Geographic Region Stratifier"
++ Combine(HIE.patientGroups, ':')

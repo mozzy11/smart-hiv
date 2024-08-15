@@ -103,11 +103,11 @@ define "Initial Population":
  */
 
 define "Numerator":
-     HIE."HIV-positive B.DE116" 
-   and (date from start of HIC."First On ART".effective.toInterval() during "Measurement Period")
+    HIE."Has HIV-positive Status" 
+   and (date from start of HE."First On ART".effective.toInterval() during "Measurement Period")
    and exists(HE."Baseline CD4 count SRV.DE3" O
    where O.effective.toInterval() during "Measurement Period"
-   and O.value < 200 'cells/mm^3')
+   and O.value < 200)
 
 
 /**
@@ -118,8 +118,8 @@ define "Numerator":
  */
 
 define "Denominator":
-  HIE."HIV-positive B.DE116" 
-   and (date from start of HIC."First On ART".effective.toInterval() during "Measurement Period")
+ HIE."Has HIV-positive Status" 
+   and (date from start of HE."First On ART".effective.toInterval() during "Measurement Period")
    and exists(HE."Baseline CD4 count SRV.DE3" O
    where O.effective.toInterval() during "Measurement Period")
     
@@ -132,19 +132,19 @@ define "Denominator":
  */
 
 define "Administrative Gender Stratifier":
-	HIC."By Administrative Gender Stratifier"
+	HIE."By Administrative Gender Stratifier"
 
 define "Age Stratifier":
-	HIC."By Age Stratifier"
+	HIE."By Age Stratifier"
 
 define "Geographic Region Stratifier":
-	HIC."By Geographic Region Stratifier"
+	HIE."By Geographic Region Stratifier"
 
 define "patientGroups Stratifier":
-	HIC."patientGroups"
+	HIE."patientGroups"
 
 define "Stratification":
- HIC."By Administrative Gender Stratifier".code 
-  + ':' + HIC."By Age Stratifier"
-+ ':' + HIC."By Geographic Region Stratifier"
-+ Combine(HIC.patientGroups, ':')
+ HIE."By Administrative Gender Stratifier".code 
+  + ':' + HIE."By Age Stratifier"
++ ':' + HIE."By Geographic Region Stratifier"
++ Combine(HIE.patientGroups, ':')
